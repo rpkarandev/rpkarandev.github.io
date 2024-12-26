@@ -1,1 +1,24 @@
-theme: jekyll-theme-midnight
+title: Prabakaran R
+url: ""
+baseurl: "/"
+
+markdown: kramdown
+#ins_logo: "./bits-logo.png"
+
+tracking_id: #
+
+footer: yes
+footer_url: "https://github.com/rpkarandev"
+footer_text: ""
+
+sass:
+    style: compressed
+    sass_dir: _sass
+
+nav:
+ - name: "About"
+   link: "/researcher/"
+ - name: "Resume"
+   link: "resume.pdf"
+ - name: "Contact"
+   link: "contact"
