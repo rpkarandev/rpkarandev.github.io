@@ -19,6 +19,16 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha12345blahblahblahblahblah" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
+    <script> 
+        $(function () {
+            var includes = $('[data-include]')
+            $.each(includes, function () {
+              var file = '_site/' + $(this).data('include') + '.html'
+              $(this).load(file)
+            })
+          })
+    </script> 
+    
 
 
 </head>
@@ -53,12 +63,29 @@
 
             <br>
         </div>
+
     </header>
 
     
     <div class="container">
         <!-- Main Content -->
         <main class="main-content">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+
+
             <section class="box-content">
                 <h2>Summary</h2>
                 <p>Research scholar with expertise in natural language processing and its application in metagenomics. Skilled in developing AI models to extract biological insights from complex datasets.</p>
@@ -126,46 +153,38 @@
             <!-- Projects -->
             <section class="box-content">
                 <h2>Projects</h2>
-                <grid style="display: grid; grid-auto-flow: column;">
-                    <div class="project" style="grid-area;">
+                    <div class="project" >
                         <h3 class="">Project Title 1</h3>
                         <div class="project-panel">
                             <p>Description of the project and key contributions.</p>
                         </div>
                     </div>
-                    <div class="project" style="grid-area;">
+                    <div class="project" >
                         <h3 class="">Project Title 2</h3>
                         <div class="project-panel">
                             <p>Description of the project and key contributions.</p>
                         </div>
                     </div>
-                    <div class="project" style="grid-area;">
+                    <div class="project" >
                         <h3 class="">Project Title 2</h3>
                         <div class="project-panel">
                             <p>Description of the project and key contributions.</p>
                         </div>
                     </div>
-                    <div class="project" style="grid-area;">
+                    <div class="project" >
                         <h3 class="">Project Title 2</h3>
                         <div class="project-panel">
                             <p>Description of the project and key contributions.</p>
                         </div>
                     </div>
-                </grid>
+                
             </section>
 
             <!-- Publications -->
             <section class="box-content">
                 <h2>Publications</h2>
-                {% raw %}{% include publications year="2014;2015" %}{% endraw %}
-                {% raw %}{% include publications style="mla" %}{% endraw %}
-                {% raw %}{% include publications %}{% endraw %}
-                <ul>
-                    {% for date in site.data.publications %}
-                      <li>{{ date.Authors }}-{{ date.Publication }}</li>
-                    {% endfor %}
-                </ul>
-            </section>
+                {{content}}
+            
 
             <!--section class="box-content">
                 <h3 class="panel ">Talks</h3>
@@ -429,7 +448,11 @@
             }
          };
     </script>
+
+
+    
 </body>
+
 </html>
 
 

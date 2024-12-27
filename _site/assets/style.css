@@ -1,9 +1,19 @@
-/* General Reset */
-* {
+/* General Reset 
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    /*font-family: 'Arial', sans-serif; 
+}
+*/
+
+.icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    /*font-family: FontAwesome;*/
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
 }
 
 body {
@@ -45,7 +55,7 @@ body {
 
 /* Banner Section */
 .banner {
-    background: rgb(30,70,75);
+    background: rgb(30,50,75);
     color: white;
     text-align: center;
     padding: 20px 10px;
@@ -71,6 +81,10 @@ body {
 
 .social-links a:hover {
     color: #ddd;
+}
+.social-links a img, .social-links  a i, .social-links  a svg {
+    color: #ddd;
+    height:34px;margin-right: -16px; margin-bottom: -6px; vertical-align:text-bottom;
 }
 
 
@@ -134,7 +148,7 @@ body {
 }
 
 .collapsible:hover {
-    background: black;
+    background: rgb(30,45,75);
 }
 
 .collapsible-content {

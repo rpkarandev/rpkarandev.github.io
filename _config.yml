@@ -2,8 +2,10 @@ title: Prabakaran R
 url: "https://rpkarandev.github.io/"
 baseurl: "/"
 
+theme: minima
 markdown: kramdown
 #ins_logo: "./bits-logo.png"
+
 
 tracking_id: #
 
@@ -15,10 +17,15 @@ sass:
     style: compressed
     sass_dir: _sass
 
-nav:
- - name: "About"
-   link: "/researcher/"
- - name: "Resume"
-   link: "resume.pdf"
- - name: "Contact"
-   link: "contact"
+scholar:
+  style: modern-language-association
+  bibliography_template: bib
+#nav:
+#  - name: "Publication"
+#   link: "publication"
+
+# - name: "Resume"
+#   link: "resume.pdf"
+# - name: "Contact"
+#   link: "contact"
+
