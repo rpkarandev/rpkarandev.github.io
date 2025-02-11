@@ -1,0 +1,99 @@
+
+<section class="box-content">
+    <h2></h2>
+
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #contact-details {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        #captcha-container {
+            margin-top: 20px;
+        }
+        canvas {
+            border: 1px solid black;
+            background-color: lightgray;
+        }
+    </style>
+
+    <h2>Contact Me</h2>
+    <p>Please verify that you're not a robot to see my contact details.</p>
+
+    <div id="captcha-container">
+        <canvas id="captchaCanvas" width="150" height="50"></canvas>
+        <br>
+        <input type="text" id="captchaInput" placeholder="Enter CAPTCHA">
+        <button onclick="validateCaptcha()">Verify</button>
+    </div>
+
+    <div id="contact-details">
+        <h3>My Contact Details</h3>
+        <p>Email: <span id="email"></span></p>
+        <p>Phone: <span id="phone"></span></p>
+        <p>Twitter: <a id="twitter" target="_blank"></a></p>
+    </div>
+
+    <script>
+        let captchaText = "";
+
+        function generateCaptcha() {
+            const canvas = document.getElementById("captchaCanvas");
+            const ctx = canvas.getContext("2d");
+
+            // Clear previous CAPTCHA
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Generate random text (6-character alphanumeric)
+            captchaText = Math.random().toString(36).substring(2, 8);
+
+            // Background color
+            ctx.fillStyle = "lightgray";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Random text color
+            ctx.fillStyle = "black";
+            ctx.font = "24px Arial";
+            ctx.fillText(captchaText, 20, 30);
+
+            // Distortions
+            ctx.strokeStyle = "red";
+            ctx.lineWidth = 2;
+            ctx.moveTo(10, Math.random() * 50);
+            ctx.lineTo(140, Math.random() * 50);
+            ctx.stroke();
+
+            ctx.moveTo(Math.random() * 50, 10);
+            ctx.lineTo(Math.random() * 150, 40);
+            ctx.stroke();
+        }
+
+        function validateCaptcha() {
+            let userInput = document.getElementById("captchaInput").value;
+            if (userInput === captchaText) {
+                document.getElementById("contact-details").style.display = "block";
+                document.getElementById("captcha-container").style.display = "none";
+
+                // Displaying encrypted contact details
+                document.getElementById("email").innerText = atob("bXllbWFpbEBleGFtcGxlLmNvbQ==");
+                document.getElementById("phone").innerText = atob("KzEyMzQ1Njc4OQ==");
+                document.getElementById("twitter").href = atob("aHR0cHM6Ly90d2l0dGVyLmNvbS9teWhhbmRsZQ==");
+                document.getElementById("twitter").innerText = "@myhandle";
+            } else {
+                alert("Incorrect CAPTCHA, try again.");
+                generateCaptcha(); // Generate a new CAPTCHA
+            }
+        }
+
+        window.onload = generateCaptcha;
+    </script>
+
+</section>

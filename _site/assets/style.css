@@ -55,7 +55,7 @@ body {
 
 /* Banner Section */
 .banner {
-    background: rgb(30,50,75);
+    background: rgb(30,45,75);
     color: white;
     text-align: center;
     padding: 20px 10px;
@@ -136,7 +136,7 @@ body {
 /* Collapsible Subsections */
 .collapsible {
     cursor: pointer;
-    background: teal;
+    background: rgb(30,45,75);
     color: white;
     padding: 10px;
     border: none;
@@ -148,7 +148,7 @@ body {
 }
 
 .collapsible:hover {
-    background: rgb(30,45,75);
+    background: rgb(0,0,0);
 }
 
 .collapsible-content {
@@ -156,7 +156,7 @@ body {
     max-height: 0;
     transition: max-height 0.5s ease-out;
     padding: 0 10px;
-    background: #f9f9f9;
+    background: rgb(255,255,255);
     border-left: 4px solid #4CAF50;
     border-radius: 0 0 5px 5px;
 }

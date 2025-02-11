@@ -1,6 +1,78 @@
 
 <section class="box-content">
     <h2></h2>
-        <div class="project" >
-        </div>
+
+    <style>
+        #contact-details {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        #captcha-box {
+            margin-top: 10px;
+        }
+    </style>
+
+
+    <h2>Contact Me</h2>
+    <p>Please verify that you're not a robot to see my contact details.</p>
+
+    <div id="captcha-box">
+        <p id="captcha-question"></p>
+        <input type="text" id="captcha-answer" placeholder="Enter answer">
+        <button onclick="validateCaptcha()">Verify</button>
+    </div>
+
+    <div id="contact-details">
+        <h3>My Contact Details</h3>
+        <p>Email: <span id="email"></span></p>
+        <p>Phone: <span id="phone"></span></p>
+        <p>Twitter: <a id="twitter" target="_blank"></a></p>
+    </div>
+
+    <script>
+        let correctAnswer = 0;
+
+        // Encrypted contact details
+        const encryptedDetails = {
+            email: "bXllbWFpbEBleGFtcGxlLmNvbQ==",  // Base64 encoded
+            phone: "KzEyMzQ1Njc4OQ==",  // Base64 encoded
+            twitter: "aHR0cHM6Ly90d2l0dGVyLmNvbS9teWhhbmRsZQ==" // Base64 encoded
+        };
+
+        function generateCaptcha() {
+            let num1 = Math.floor(Math.random() * 10) + 1;
+            let num2 = Math.floor(Math.random() * 10) + 1;
+            let operators = ['+', '-', '*'];
+            let operator = operators[Math.floor(Math.random() * operators.length)];
+
+            let question = `${num1} ${operator} ${num2}`;
+            correctAnswer = eval(question);
+
+            document.getElementById("captcha-question").innerText = "Solve: " + question;
+        }
+
+        function validateCaptcha() {
+            let userAnswer = document.getElementById("captcha-answer").value;
+            if (parseInt(userAnswer) === correctAnswer) {
+                document.getElementById("contact-details").style.display = "block";
+                document.getElementById("captcha-box").style.display = "none";
+                
+                // Decrypt contact info
+                document.getElementById("email").innerText = atob(encryptedDetails.email);
+                document.getElementById("phone").innerText = atob(encryptedDetails.phone);
+                document.getElementById("twitter").href = atob(encryptedDetails.twitter);
+                document.getElementById("twitter").innerText = "@myhandle";
+            } else {
+                alert("Incorrect answer. Try again!");
+                generateCaptcha();
+            }
+        }
+
+        window.onload = generateCaptcha;
+    </script>
+
+    
 </section>
