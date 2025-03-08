@@ -6,6 +6,11 @@ theme: minima
 markdown: kramdown
 #ins_logo: "./bits-logo.png"
 
+minima:
+  skin: classic
+  custom_css:
+    - assets/style.css
+
 
 tracking_id: #
 

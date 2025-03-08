@@ -1,0 +1,32 @@
+.collapsible {
+    background-color:rgb(10, 51, 51);
+}
+
+.box-content{
+    width:100%;
+}
+
+body {
+     width:100%;
+    }
+
+.publication-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    }
+    
+    .publication-wrapper ol {
+    line-height: 1.4;
+    }
+    
+    .publication-wrapper li {
+    margin-bottom: 0.5rem;
+    }
+
+    aside#skills-sidebar {
+        float: left;
+        width: 200px;
+        min-height: 504px;
+        ...
+      }

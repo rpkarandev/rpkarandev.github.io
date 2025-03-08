@@ -83,6 +83,14 @@ hr {
 
 /* Mobile */
 
+@media (max-width: 1200) {
+    .container {
+        max-width: $max-width;
+        transition: 0.3s ease all;
+    }
+}
+
+
 @media (max-width: 800px) {
     .container {
         max-width: $med-width;

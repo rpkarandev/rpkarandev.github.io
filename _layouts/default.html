@@ -16,6 +16,10 @@
     <link href="/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
         <!-- custom -->
     <link rel="stylesheet" href="/assets/style.css">
+    <!--link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}"-->
+    <link rel="stylesheet" href="/assets/css/custom.css">
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+
     <script> 
         $(function () {
             var includes = $('[data-include]')
@@ -36,12 +40,12 @@
         <!-- Main Content -->
         <main class="main-content">
            {% include navbar.html %}
+           
                 {{content}}
 
         </main>
 
         {% include sidebar.html %}
-
       
     </div>
 
@@ -74,7 +78,7 @@
 
     
 </body>
-
+{% include banner.html %}
 </html>
 
 

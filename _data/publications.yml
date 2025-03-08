@@ -1,341 +1,157 @@
----
-nocite: "[@*]"
-references:
-- author:
-  - family: Prabakaran
-    given: R
-  - family: Rawat
-    given: Puneet
-  - family: Kumar
-    given: Sandeep
-  - family: Gromiha
-    given: M Michael
-  container-title: Journal of Molecular Biology
-  id: prabakaran2021anupp
-  issue: 11
-  issued: 2021
-  page: 166707
-  publisher: Academic Press
-  title: "ANuPP: A versatile tool to predict aggregation nucleating
-    regions in peptides and proteins"
-  title-short: ANuPP
-  type: article-journal
-  volume: 433
-- author:
-  - family: Rawat
-    given: Puneet
-  - family: Prabakaran
-    given: R
-  - family: Sakthivel
-    given: R
-  - family: Mary Thangakani
-    given: A
-  - family: Kumar
-    given: Sandeep
-  - family: Gromiha
-    given: M Michael
-  container-title: Amyloid
-  id: rawat2020cpad
-  issue: 2
-  issued: 2020
-  page: 128-133
-  publisher: Taylor & Francis
-  title: "CPAD 2.0: A repository of curated experimental data on
-    aggregating proteins and peptides"
-  title-short: CPAD 2.0
-  type: article-journal
-  volume: 27
-- author:
-  - family: Rawat
-    given: Puneet
-  - family: Prabakaran
-    given: R
-  - family: Kumar
-    given: Sandeep
-  - family: Gromiha
-    given: M Michael
-  container-title: Bioinformatics
-  id: rawat2020aggrerate
-  issue: 5
-  issued: 2020
-  page: 1439-1444
-  publisher: Oxford University Press
-  title: "AggreRATE-pred: A mathematical model for the prediction of
-    change in aggregation rate upon point mutation"
-  title-short: AggreRATE-pred
-  type: article-journal
-  volume: 36
-- author:
-  - family: Prabakaran
-    given: R
-  - family: Goel
-    given: Dhruv
-  - family: Kumar
-    given: Sandeep
-  - family: Gromiha
-    given: M Michael
-  container-title: "Proteins: Structure, Function, and Bioinformatics"
-  id: prabakaran2017aggregation
-  issue: 6
-  issued: 2017
-  page: 1099-1118
-  publisher: Wiley Online Library
-  title: "Aggregation prone regions in human proteome: Insights from
-    large-scale data analyses"
-  title-short: Aggregation prone regions in human proteome
-  type: article-journal
-  volume: 85
-- author:
-  - family: Prabakaran
-    given: R
-  - family: Rawat
-    given: Puneet
-  - family: Thangakani
-    given: A Mary
-  - family: Kumar
-    given: Sandeep
-  - family: Gromiha
-    given: M Michael
-  container-title: Biophysical reviews
-  id: prabakaran2021protein
-  issued: 2021
-  page: 71-89
-  publisher: Springer Berlin Heidelberg
-  title: "Protein aggregation: In silico algorithms and applications"
-  title-short: Protein aggregation
-  type: article-journal
-  volume: 13
-- author:
-  - family: Prabakaran
-    given: R
-  - family: Nikam
-    given: Rahul
-  - family: Kumar
-    given: Sandeep
-  - family: Gromiha
-    given: M Michael
-  container-title: Intelligent computing theories and application
-  id: prabakaran2017influence
-  issued: 2017
-  page: 541-548
-  publisher: Springer, Cham
-  title: Influence of amino acid properties for characterizing amyloid
-    peptides in human proteome
-  type: chapter
-  volume: 10362
-- author:
-  - family: Rawat
-    given: Puneet
-  - family: Prabakaran
-    given: R
-  - family: Kumar
-    given: Sandeep
-  - family: Gromiha
-    given: M Michael
-  container-title: Scientific Reports
-  id: rawat2021exploring
-  issue: 1
-  issued: 2021
-  page: 13785
-  publisher: Nature Publishing Group UK London
-  title: Exploring the sequence features determining amyloidosis in
-    human antibody light chains
-  type: article-journal
-  volume: 11
-- author:
-  - family: Rawat
-    given: Puneet
-  - family: Prabakaran
-    given: R
-  - family: Kumar
-    given: Sandeep
-  - family: Gromiha
-    given: M Michael
-  container-title: Biochimica et Biophysica Acta (BBA)-Proteins and
-    Proteomics
-  id: rawat2021absolurate
-  issue: 9
-  issued: 2021
-  page: 140682
-  publisher: Elsevier
-  title: "AbsoluRATE: An in-silico method to predict the aggregation
-    kinetics of native proteins"
-  title-short: AbsoluRATE
-  type: article-journal
-  volume: 1869
-- author:
-  - family: Prabakaran
-    given: R
-  - family: Rawat
-    given: Puneet
-  - family: Kumar
-    given: Sandeep
-  - family: Gromiha
-    given: M Michael
-  container-title: Briefings in Bioinformatics
-  id: prabakaran2021evaluation
-  issue: 6
-  issued: 2021
-  page: bbab240
-  publisher: Oxford University Press
-  title: Evaluation of in silico tools for the prediction of protein and
-    peptide aggregation on diverse datasets
-  type: article-journal
-  volume: 22
-- author:
-  - family: Prabakaran
-    given: R
-  - family: Rawat
-    given: Puneet
-  - family: Yasuo
-    given: Nobuaki
-  - family: Sekijima
-    given: Masakazu
-  - family: Kumar
-    given: Sandeep
-  - family: Gromiha
-    given: M Michael
-  container-title: "Proteins: Structure, Function, and Bioinformatics"
-  id: prabakaran2022effect
-  issue: 2
-  issued: 2022
-  page: 405-417
-  publisher: Wiley Online Library
-  title: "Effect of charged mutation on aggregation of a pentapeptide:
-    Insights from molecular dynamics simulations"
-  title-short: Effect of charged mutation on aggregation of a
-    pentapeptide
-  type: article-journal
-  volume: 90
-- author:
-  - family: Prabakaran
-    given: R
-  - family: Jemimah
-    given: Sherlyn
-  - family: Rawat
-    given: Puneet
-  - family: Sharma
-    given: Divya
-  - family: Gromiha
-    given: M Michael
-  container-title: Scientific reports
-  id: prabakaran2021novel
-  issue: 1
-  issued: 2021
-  page: 24073
-  publisher: Nature Publishing Group UK London
-  title: A novel hybrid SEIQR model incorporating the effect of
-    quarantine and lockdown regulations for COVID-19
-  type: article-journal
-  volume: 11
-- author:
-  - family: Rawat
-    given: Puneet
-  - family: Sharma
-    given: Divya
-  - family: Pandey
-    given: Medha
-  - family: Prabakaran
-    given: R
-  - family: Gromiha
-    given: M Michael
-  container-title: Computers in biology and medicine
-  id: rawat2022understanding
-  issued: 2022
-  page: 105708
-  publisher: Pergamon
-  title: Understanding the mutational frequency in SARS-CoV-2 proteome
-    using structural features
-  type: article-journal
-  volume: 147
-- author:
-  - family: Prabakaran
-    given: R
-  - family: Rawat
-    given: Puneet
-  - family: Kumar
-    given: Sandeep
-  - family: Gromiha
-    given: M Michael
-  - family: Rawat
-    given: P
-  - literal: others
-  id: prabakaranaggregation
-  title: Aggregation nucleation prediction in peptides and proteins.
-    Read more\...
-  type: article-journal
-- author:
-  - family: Rawat
-    given: Puneet
-  - family: Sharma
-    given: Divya
-  - family: Prabakaran
-    given: R
-  - family: Ridha
-    given: Fathima
-  - family: Mohkhedkar
-    given: Mugdha
-  - family: Janakiraman
-    given: Vani
-  - family: Gromiha
-    given: M Michael
-  container-title: Bioinformatics
-  id: rawat2022ab
-  issue: 16
-  issued: 2022
-  page: 4051-4052
-  publisher: Oxford University Press
-  title: "Ab-CoV: A curated database for binding affinity and
-    neutralization profiles of coronavirus-related antibodies"
-  title-short: Ab-CoV
-  type: article-journal
-  volume: 38
-- author:
-  - family: Bromberg
-    given: Yana
-  - family: Prabakaran
-    given: R
-  - family: Kabir
-    given: Anowarul
-  - family: Shehu
-    given: Amarda
-  container-title: Cold Spring Harbor Perspectives in Biology
-  id: bromberg2024variant
-  issued: 2024
-  page: a041467
-  publisher: Cold Spring Harbor Lab
-  title: Variant effect prediction in the age of machine learning
-  type: article-journal
-- author:
-  - family: Prabakaran
-    given: R
-  - family: Bromberg
-    given: "Y"
-  container-title: bioRxiv
-  id: prabakaran2023functional
-  issued: 2023
-  page: 2023-07
-  publisher: Cold Spring Harbor Laboratory
-  title: "Functional profiling of the sequence stockpile: A review and
-    assessment of in silico prediction tools"
-  title-short: Functional profiling of the sequence stockpile
-  type: article-journal
-- author:
-  - family: Prabakaran
-    given: R
-  - family: Rawat
-    given: Puneet
-  - family: Kumar
-    given: Sandeep
-  - family: Gromiha
-    given: M Michael
-  container-title: "PROTEIN MUTATIONS: Consequences on structure,
-    functions, and diseases"
-  id: prabakaran2025deciphering
-  issued: 2025
-  page: 3-38
-  title: Deciphering the modulatory role of mutations in protein
-    aggregation through in silico methods
-  type: chapter
----
-
+- Authors: 'Prabakaran, R; Rawat, Puneet; Kumar, Sandeep; Gromiha, M Michael; '
+  Title: 'ANuPP: a versatile tool to predict aggregation nucleating regions in peptides
+    and proteins'
+  Publication: Journal of molecular biology
+  Volume: '433'
+  Number: '11'
+  Pages: '166707'
+  Year: '2021'
+  Publisher: Academic Press
+- Authors: 'Rawat, Puneet; Prabakaran, R; Sakthivel, R; Mary Thangakani, A; Kumar,
+    Sandeep; Gromiha, M Michael; '
+  Title: 'CPAD 2.0: a repository of curated experimental data on aggregating proteins
+    and peptides'
+  Publication: Amyloid
+  Volume: '27'
+  Number: '2'
+  Pages: 128-133
+  Year: '2020'
+  Publisher: Taylor & Francis
+- Authors: 'Rawat, Puneet; Prabakaran, R; Kumar, Sandeep; Gromiha, M Michael; '
+  Title: 'AggreRATE-Pred: a mathematical model for the prediction of change in aggregation
+    rate upon point mutation'
+  Publication: Bioinformatics
+  Volume: '36'
+  Number: '5'
+  Pages: 1439-1444
+  Year: '2020'
+  Publisher: Oxford University Press
+- Authors: 'Prabakaran, R; Goel, Dhruv; Kumar, Sandeep; Gromiha, M Michael; '
+  Title: 'Aggregation prone regions in human proteome: Insights from large‐scale data
+    analyses'
+  Publication: 'Proteins: Structure, Function, and Bioinformatics'
+  Volume: '85'
+  Number: '6'
+  Pages: 1099-1118
+  Year: '2017'
+  Publisher: Wiley Online Library
+- Authors: 'Prabakaran, R; Rawat, Puneet; Thangakani, A Mary; Kumar, Sandeep; Gromiha,
+    M Michael; '
+  Title: 'Protein aggregation: in silico algorithms and applications'
+  Publication: Biophysical reviews
+  Volume: '13'
+  Number: ''
+  Pages: 71-89
+  Year: '2021'
+  Publisher: Springer Berlin Heidelberg
+- Authors: 'Prabakaran, R; Nikam, Rahul; Kumar, Sandeep; Gromiha, M Michael; '
+  Title: Influence of Amino Acid Properties for Characterizing Amyloid Peptides in
+    Human Proteome
+  Publication: Intelligent Computing Theories and Application
+  Volume: '10362'
+  Number: ''
+  Pages: 541-548
+  Year: '2017'
+  Publisher: Springer, Cham
+- Authors: 'Rawat, Puneet; Prabakaran, R; Kumar, Sandeep; Gromiha, M Michael; '
+  Title: Exploring the sequence features determining amyloidosis in human antibody
+    light chains
+  Publication: Scientific Reports
+  Volume: '11'
+  Number: '1'
+  Pages: '13785'
+  Year: '2021'
+  Publisher: Nature Publishing Group UK London
+- Authors: 'Rawat, Puneet; Prabakaran, R; Kumar, Sandeep; Gromiha, M Michael; '
+  Title: 'AbsoluRATE: An in-silico method to predict the aggregation kinetics of native
+    proteins'
+  Publication: Biochimica et Biophysica Acta (BBA)-Proteins and Proteomics
+  Volume: '1869'
+  Number: '9'
+  Pages: '140682'
+  Year: '2021'
+  Publisher: Elsevier
+- Authors: 'Prabakaran, R; Rawat, Puneet; Kumar, Sandeep; Gromiha, M Michael; '
+  Title: Evaluation of in silico tools for the prediction of protein and peptide aggregation
+    on diverse datasets
+  Publication: Briefings in Bioinformatics
+  Volume: '22'
+  Number: '6'
+  Pages: bbab240
+  Year: '2021'
+  Publisher: Oxford University Press
+- Authors: 'Prabakaran, R; Rawat, Puneet; Yasuo, Nobuaki; Sekijima, Masakazu; Kumar,
+    Sandeep; Gromiha, M Michael; '
+  Title: 'Effect of charged mutation on aggregation of a pentapeptide: Insights from
+    molecular dynamics simulations'
+  Publication: 'Proteins: Structure, Function, and Bioinformatics'
+  Volume: '90'
+  Number: '2'
+  Pages: 405-417
+  Year: '2022'
+  Publisher: Wiley Online Library
+- Authors: 'Prabakaran, R; Jemimah, Sherlyn; Rawat, Puneet; Sharma, Divya; Gromiha,
+    M Michael; '
+  Title: A novel hybrid SEIQR model incorporating the effect of quarantine and lockdown
+    regulations for COVID-19
+  Publication: Scientific reports
+  Volume: '11'
+  Number: '1'
+  Pages: '24073'
+  Year: '2021'
+  Publisher: Nature Publishing Group UK London
+- Authors: 'Rawat, Puneet; Sharma, Divya; Pandey, Medha; Prabakaran, R; Gromiha, M
+    Michael; '
+  Title: Understanding the mutational frequency in SARS-CoV-2 proteome using structural
+    features
+  Publication: Computers in biology and medicine
+  Volume: '147'
+  Number: ''
+  Pages: '105708'
+  Year: '2022'
+  Publisher: Pergamon
+- Authors: 'Rawat, Puneet; Sharma, Divya; Prabakaran, R; Ridha, Fathima; Mohkhedkar,
+    Mugdha; Janakiraman, Vani; Gromiha, M Michael; '
+  Title: 'Ab-CoV: a curated database for binding affinity and neutralization profiles
+    of coronavirus-related antibodies'
+  Publication: Bioinformatics
+  Volume: '38'
+  Number: '16'
+  Pages: 4051-4052
+  Year: '2022'
+  Publisher: Oxford University Press
+- Authors: 'Bromberg, Yana; Prabakaran, R; Kabir, Anowarul; Shehu, Amarda; '
+  Title: Variant effect prediction in the age of machine learning
+  Publication: Cold Spring Harbor Perspectives in Biology
+  Volume: '16'
+  Number: '7'
+  Pages: a041467
+  Year: '2024'
+  Publisher: Cold Spring Harbor Lab
+- Authors: 'Prabakaran, R; Bromberg, Yana; '
+  Title: Deciphering enzymatic potential in metagenomic reads through DNA language
+    model
+  Publication: bioRxiv
+  Volume: ''
+  Number: ''
+  Pages: 2024.12. 10.627786
+  Year: '2024'
+  Publisher: Cold Spring Harbor Laboratory
+- Authors: 'Prabakaran, R; Bromberg, Yana; '
+  Title: 'Functional profiling of the sequence stockpile: a protein pair-based assessment
+    of in silico prediction tools'
+  Publication: Bioinformatics
+  Volume: '41'
+  Number: '2'
+  Pages: btaf035
+  Year: '2025'
+  Publisher: Oxford University Press
+- Authors: 'Rawat, Puneet; Crescioli, Silvia; Prabakaran, R; Sharma, Divya; Greiff,
+    Victor; Reichert, Janice M; '
+  Title: 'YAbS: The Antibody Society’s antibody therapeutics database'
+  Publication: mAbs
+  Volume: '17'
+  Number: '1'
+  Pages: '2468845'
+  Year: '2025'
+  Publisher: Taylor & Francis
