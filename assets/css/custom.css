@@ -10,10 +10,18 @@ body {
      width:100%;
     }
 
-.publication-wrapper {
+.wrapper{
+
     max-width: 100%;
     margin: 0 auto;
     padding: 0px;
+
+}
+
+.publication-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
     }
     
     .publication-wrapper ol {
@@ -26,7 +34,7 @@ body {
 
     aside#skills-sidebar {
         float: left;
-        width: 200px;
+        width:150px;
         min-height: 504px;
-        ...
+        
       }
