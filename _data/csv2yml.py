@@ -2,7 +2,7 @@ import csv
 import yaml
 import sys
 
-csv_file = 'publications.csv'
+csv_file = 'publications_.csv'
 yaml_file = 'publications.yml'
 
 with open(csv_file, 'r', encoding='utf-8') as f:

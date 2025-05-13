@@ -100,16 +100,6 @@
   Pages: '24073'
   Year: '2021'
   Publisher: Nature Publishing Group UK London
-- Authors: 'Rawat, Puneet; Sharma, Divya; Pandey, Medha; Prabakaran, R; Gromiha, M
-    Michael; '
-  Title: Understanding the mutational frequency in SARS-CoV-2 proteome using structural
-    features
-  Publication: Computers in biology and medicine
-  Volume: '147'
-  Number: ''
-  Pages: '105708'
-  Year: '2022'
-  Publisher: Pergamon
 - Authors: 'Rawat, Puneet; Sharma, Divya; Prabakaran, R; Ridha, Fathima; Mohkhedkar,
     Mugdha; Janakiraman, Vani; Gromiha, M Michael; '
   Title: 'Ab-CoV: a curated database for binding affinity and neutralization profiles
@@ -134,8 +124,16 @@
   Publication: bioRxiv
   Volume: ''
   Number: ''
-  Pages: 2024.12. 10.627786
+  Pages: '2024.12.10.627786'
   Year: '2024'
+  Publisher: Cold Spring Harbor Laboratory
+- Authors: 'Prabakaran, R; Bromberg, Yana; '
+  Title: Quantifying uncertainty in Protein Representations Across Models and Task
+  Publication: bioRxiv
+  Volume: ''
+  Number: ''
+  Pages: '2025.04.30.651545'
+  Year: '2025'
   Publisher: Cold Spring Harbor Laboratory
 - Authors: 'Prabakaran, R; Bromberg, Yana; '
   Title: 'Functional profiling of the sequence stockpile: a protein pair-based assessment
