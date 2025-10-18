@@ -41,7 +41,7 @@ listing:
       {% assign highlighted_journal = "<em><strong>" | append: journal | append: "</strong></em>" %}
 
       <li>
-        {{ formatted_authors }} ({{ citation.Year }})" {{ citation.Title }}."
+        {{ formatted_authors }} ({{ citation.Year }}) <em>"{{ citation.Title }}."</em>
         {{ highlighted_journal }}.
         {%if citation.Volume and citation.Volume != "" %},{{citation.Volume}}{% if citation.Number %}({{citation.Number}}){%endif%}{% endif %}{%if citation.Pages %}:{{citation.Pages}}{% endif %}
       </li>
