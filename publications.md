@@ -7,7 +7,7 @@ description: Peer-reviewed publications and preprints by R. Prabakaran in comput
 ---
 
 {% assign s = site.data.scholar %}
-{% if s and s.total_citations and s.total_citations > 0 %}
+{% if site.show_citations and s and s.total_citations and s.total_citations > 0 %}
 <section class="box-content" style="width:100%">
   <h2>Citation metrics</h2>
   <hr>
@@ -36,6 +36,8 @@ description: Peer-reviewed publications and preprints by R. Prabakaran in comput
 
 <section class="box-content" style="width:100%">
 <div class="publication-wrapper" style="text-align: justify;text-justify: inter-word;">
+
+  <p class="pub-legend" style="font-size:0.85em;color:#666;">* corresponding author. <strong>Bold</strong> = R. Prabakaran.</p>
 
   {% assign selected = site.data.publications | where: "selected", true | sort: "Year" | reverse %}
   {% if selected.size > 0 %}

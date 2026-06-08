@@ -10,6 +10,9 @@ description: >-
 author: R. Prabakaran
 lang: en
 
+# Toggle Google Scholar citation metrics, graph, and per-paper badges site-wide
+show_citations: true
+
 theme: minima
 markdown: kramdown
 #ins_logo: "./bits-logo.png"
@@ -47,6 +50,23 @@ footer_text: ""
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+
+# Keep unused vendor libraries and tooling out of the built site
+exclude:
+  - assets/vendor/owl.carousel
+  - assets/vendor/venobox
+  - assets/vendor/icofont
+  - assets/vendor/isotope-layout
+  - assets/vendor/jquery
+  - assets/vendor/jquery.easing
+  - assets/vendor/waypoints
+  - assets/vendor/counterup
+  - assets/vendor/php-email-form
+  - assets/vendor/fontawesomes
+  - tools
+  - Gemfile
+  - Gemfile.lock
+  - README.md
 
 sass:
     style: compressed

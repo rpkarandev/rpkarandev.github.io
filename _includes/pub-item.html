@@ -22,5 +22,5 @@
   {{ formatted_authors }} ({{ citation.Year }}) <em>"{{ citation.Title }}."</em>
   <em><strong>{{ citation.Publication }}</strong></em>{% if citation.Volume and citation.Volume != "" %},{{ citation.Volume }}{% if citation.Number and citation.Number != "" %}({{ citation.Number }}){% endif %}{% endif %}{% if citation.Pages and citation.Pages != "" %}:{{ citation.Pages }}{% endif %}.
   {% if citation.doi and citation.doi != "" %}<a class="pub-link" href="https://doi.org/{{ citation.doi }}" target="_blank" rel="noopener">doi&nbsp;&#8599;</a>{% endif %}
-  {% if cites != "" and cites != 0 %}<span class="cite-badge" title="Google Scholar citations">{{ cites }} citations</span>{% endif %}
+  {% if site.show_citations and cites != "" and cites != 0 %}<span class="cite-badge" title="Google Scholar citations">{{ cites }} citations</span>{% endif %}
 </li>

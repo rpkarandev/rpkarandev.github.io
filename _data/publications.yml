@@ -3,7 +3,7 @@
 #   selected: true                              (highlights it in the "Selected" group)
 # Citation counts come from _data/scholar.yml (matched by Title) — see tools/update_scholar.py
 
-- Authors: 'Prabakaran, R; Bromberg, Yana; '
+- Authors: 'Prabakaran, R*; Bromberg, Yana*; '
   Title: 'Quantifying uncertainty in protein representations across models and tasks'
   Publication: Nature Methods
   Volume: '23'
@@ -33,7 +33,7 @@
   Year: '2025'
   Publisher: Taylor & Francis
   doi: 10.1080/19420862.2025.2468845
-- Authors: 'Prabakaran, R; Bromberg, Yana; '
+- Authors: 'Prabakaran, R*; Bromberg, Yana*; '
   Title: 'Deciphering enzymatic potential in metagenomic reads through DNA language models'
   Publication: 'Nucleic Acids Research'
   Volume: '53'

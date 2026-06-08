@@ -1,0 +1,14 @@
+{%- comment -%}
+Renders a Google Scholar citation badge for a publication, matched by title prefix.
+Usage:  {% include cite-badge.html title="Exact publication title" %}
+Gated by site.show_citations in _config.yml.
+{%- endcomment -%}
+{%- if site.show_citations -%}
+  {%- assign ckey = include.title | downcase | replace: "-", " " | replace: ":", " " | strip | truncate: 30, "" -%}
+  {%- assign cites = "" -%}
+  {%- for art in site.data.scholar.articles -%}
+    {%- assign akey = art.title | downcase | replace: "-", " " | replace: ":", " " | strip | truncate: 30, "" -%}
+    {%- if akey == ckey -%}{%- assign cites = art.citations -%}{%- endif -%}
+  {%- endfor -%}
+  {%- if cites != "" and cites != 0 %} <span class="cite-badge" title="Google Scholar citations">{{ cites }} citations</span>{% endif -%}
+{%- endif -%}

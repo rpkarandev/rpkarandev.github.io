@@ -60,7 +60,7 @@ body {
 /* News timeline accent */
 .news-date {
     font-weight: bold;
-    color: var(--accent);
+    color: var(--accent-text);
     margin-right: 6px;
 }
 
@@ -101,7 +101,7 @@ body {
 
 /* DOI / publication links */
 .pub-link {
-    color: var(--accent);
+    color: var(--accent-text);
     text-decoration: none;
     font-weight: 600;
     white-space: nowrap;
