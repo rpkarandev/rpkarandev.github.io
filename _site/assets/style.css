@@ -25,20 +25,25 @@
     --text: #1e2622;
 }
 
+html { font-size: 106.25%; } /* 17px base; all rem sizes scale from here */
+
 body {
     display: flex;
     flex-direction: column;
     background: var(--bg);
     color: var(--text);
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
+    font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 1rem;
+    line-height: 1.65;
     -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, .banner h1, .nav-tabs .nav-link, .skill-tag, .scholar-stat .num {
-    font-family: 'Space Grotesk', 'Inter', sans-serif;
-    letter-spacing: -0.01em;
+h1, h2, h3, h4, .banner h1, .scholar-stat .num {
+    font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
+    letter-spacing: 0;
+}
+.skill-tag {
+    font-family: 'Source Sans 3', sans-serif;
 }
 
 /* Type scale */
