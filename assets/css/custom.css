@@ -1,5 +1,5 @@
 .collapsible {
-    background-color:rgb(10, 51, 51);
+    background-color: var(--primary);
 }
 
 .box-content{
@@ -36,5 +36,251 @@ body {
         float: left;
         width:150px;
         min-height: 504px;
-        
+
       }
+
+/* Skill tags (replaces numeric skill bars) */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 10px 0;
+}
+.skill-tag {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.2;
+    padding: 5px 12px;
+    border-radius: 15px;
+    background: #eef3f3;
+    color: var(--primary);
+    border: 1px solid rgba(15, 61, 62, 0.18);
+}
+
+/* News timeline accent */
+.news-date {
+    font-weight: bold;
+    color: var(--accent);
+    margin-right: 6px;
+}
+
+/* Unified "Area of interest" badges */
+.keywords span.badge {
+    background-color: var(--primary) !important;
+}
+.keywords span.badge:nth-child(3n) {
+    background-color: var(--accent) !important;
+}
+
+/* Work-in-progress badge on project cards */
+.wip-tag {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.6em;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 3px 9px;
+    border-radius: 10px;
+    background: #fbe6cf;
+    color: #8a5a12;
+    border: 1px solid rgba(200, 132, 44, 0.4);
+}
+
+/* Research theme grouping */
+.research-theme > h2 {
+    margin-bottom: 4px;
+}
+.theme-lead {
+    color: #555;
+    font-size: 0.95em;
+    margin: 0 0 14px;
+}
+
+/* DOI / publication links */
+.pub-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.pub-link:hover { text-decoration: underline; }
+.cite-badge {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 1px 8px;
+    border-radius: 10px;
+    background: #eef3f3;
+    color: var(--primary);
+    border: 1px solid rgba(15, 61, 62, 0.18);
+    white-space: nowrap;
+}
+li.selected-pub::marker { color: var(--accent); }
+
+/* Scholar citation summary + per-year graph */
+.scholar-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin: 8px 0 18px;
+}
+.scholar-stat {
+    background: var(--primary);
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px 18px;
+    text-align: center;
+    min-width: 96px;
+}
+.scholar-stat .num { display: block; font-size: 1.6em; font-weight: 700; line-height: 1.1; }
+.scholar-stat .lbl { font-size: 0.8em; opacity: 0.85; }
+.cite-graph {
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+    height: 130px;
+    padding: 8px 4px 0;
+    border-bottom: 2px solid rgba(15, 61, 62, 0.25);
+    overflow-x: auto;
+}
+.cite-graph .bar-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1 0 26px;
+    height: 100%;
+}
+.cite-graph .bar {
+    width: 70%;
+    background: var(--accent);
+    border-radius: 3px 3px 0 0;
+    transition: height 0.4s ease-out;
+}
+.cite-graph .bar-val { font-size: 11px; color: var(--text); margin-bottom: 2px; }
+.cite-graph .bar-yr { font-size: 11px; color: #777; margin-top: 4px; }
+.scholar-updated { font-size: 0.8em; color: #888; margin-top: 6px; }
+
+/* ===== Floating tab navigation ===== */
+.nav-tabs {
+    position: sticky;
+    top: 10px;
+    z-index: 50;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.92);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    padding: 8px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(15, 61, 62, 0.12);
+    margin-bottom: 18px;
+}
+.nav-tabs, .nav-tabs .nav-item { list-style: none; }
+.nav-tabs .nav-item { margin: 0; }
+.nav-tabs .nav-item::marker { content: ""; }
+.nav-tabs .nav-link {
+    border: none;
+    border-radius: 10px;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.95em;
+    padding: 8px 16px;
+    transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+.nav-tabs .nav-link:hover {
+    background: #eef3f3;
+    color: var(--primary);
+    transform: translateY(-1px);
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    box-shadow: inset 0 -3px 0 var(--accent), 0 3px 8px rgba(15, 61, 62, 0.25);
+}
+
+/* ===== Quote / blockquote (e.g. Research page header) ===== */
+.page-quote {
+    background: #fff;
+    border-left: 5px solid var(--accent);
+    border-radius: 10px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.08);
+    padding: 22px 26px;
+    margin-bottom: 16px;
+}
+.page-quote blockquote {
+    margin: 0;
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-size: 1.25em;
+    line-height: 1.45;
+    color: var(--primary);
+    font-style: italic;
+}
+.page-quote .quote-cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+    font-style: normal;
+}
+.page-quote .quote-cite::before { content: "\2014\00a0"; }
+
+/* ===== Contact card ===== */
+.contact-card .contact-intro {
+    font-size: 1.05em;
+    color: #444;
+    max-width: 640px;
+    margin-bottom: 4px;
+}
+.contact-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 18px;
+}
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+.contact-item > i {
+    font-size: 22px;
+    color: var(--accent);
+    background: #eef3f3;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 1;
+}
+.contact-item .ci-label {
+    display: block;
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+.contact-item .ci-value { font-size: 1.05em; }
+.contact-item .social-links { margin-top: 4px; }
+
+/* Responsive layout: stack the sidebar below the main content on small screens */
+@media (max-width: 820px) {
+    .container {
+        flex-direction: column;
+        margin: 12px;
+        gap: 12px;
+    }
+    .main-content,
+    .skills-sidebar {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    .banner h1 { font-size: 2em; }
+    .project:hover { transform: none; }
+}

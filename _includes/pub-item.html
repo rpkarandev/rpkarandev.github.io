@@ -1,0 +1,26 @@
+{%- assign citation = include.citation -%}
+{%- assign authors = citation.Authors | split: ";" -%}
+{%- assign formatted_authors = "" -%}
+{%- for author in authors -%}
+  {%- assign author_trimmed = author | strip -%}
+  {%- if author_trimmed == "" -%}{%- continue -%}{%- endif -%}
+  {%- if author_trimmed contains "Prabakaran" -%}
+    {%- assign formatted_authors = formatted_authors | append: "<strong>" | append: author_trimmed | append: "</strong>" -%}
+  {%- else -%}
+    {%- assign formatted_authors = formatted_authors | append: author_trimmed -%}
+  {%- endif -%}
+  {%- unless forloop.last -%}{%- assign formatted_authors = formatted_authors | append: ", " -%}{%- endunless -%}
+{%- endfor -%}
+{%- comment -%} match Scholar citation count by normalized title prefix {%- endcomment -%}
+{%- assign cites = "" -%}
+{%- assign ckey = citation.Title | downcase | replace: "-", " " | replace: ":", " " | strip | truncate: 30, "" -%}
+{%- for art in site.data.scholar.articles -%}
+  {%- assign akey = art.title | downcase | replace: "-", " " | replace: ":", " " | strip | truncate: 30, "" -%}
+  {%- if akey == ckey -%}{%- assign cites = art.citations -%}{%- endif -%}
+{%- endfor -%}
+<li class="{% if citation.selected %}selected-pub{% endif %}">
+  {{ formatted_authors }} ({{ citation.Year }}) <em>"{{ citation.Title }}."</em>
+  <em><strong>{{ citation.Publication }}</strong></em>{% if citation.Volume and citation.Volume != "" %},{{ citation.Volume }}{% if citation.Number and citation.Number != "" %}({{ citation.Number }}){% endif %}{% endif %}{% if citation.Pages and citation.Pages != "" %}:{{ citation.Pages }}{% endif %}.
+  {% if citation.doi and citation.doi != "" %}<a class="pub-link" href="https://doi.org/{{ citation.doi }}" target="_blank" rel="noopener">doi&nbsp;&#8599;</a>{% endif %}
+  {% if cites != "" and cites != 0 %}<span class="cite-badge" title="Google Scholar citations">{{ cites }} citations</span>{% endif %}
+</li>

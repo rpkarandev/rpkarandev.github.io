@@ -1,18 +1,37 @@
-<section class="box-content">
-    <h2>Research projects</h2>
+<div class="page-quote">
+    <blockquote>
+        "What we observe is not nature itself, but nature exposed to our method of questioning."
+        <span class="quote-cite">Werner Heisenberg</span>
+    </blockquote>
+</div>
+
+<section class="box-content research-theme">
+    <h2>AI &amp; Representation Learning for biology</h2>
+    <p class="theme-lead">Methods that probe and quantify what protein and DNA language models actually encode.</p>
     <div class="project" >
-        <h3 class="">Model and task agnostic evaluation of Protein/DNA embeddings' uncertainity</h3>
+        <h3 class="">Model and task agnostic evaluation of Protein/DNA embeddings' uncertainty</h3>
         <div class="project-panel">
-            <p> "All models are wrong, ..." - we formulate Random Neighbor Score (RNS) to quantify the uncertainity of 
-                biomolecule representations like protein, DNA or RNA - in a LM’s latent space.                 
+            <p> "All models are wrong, ..." - we formulate Random Neighbor Score (RNS) to quantify the uncertainty of
+                biomolecule representations like protein, DNA or RNA - in a LM’s latent space.
             <br>
             <br>
-            
-            <span><strong>Publication: </strong></span><a href="https://doi.org/10.1101/2025.04.30.651545" target="_blank">bioRxiv</a>
+
+            <span><strong>Publication: </strong></span><a href="https://doi.org/10.1038/s41592-026-03028-7" target="_blank" rel="noopener">Prabakaran, R*., Bromberg, Y*. Quantifying uncertainty in protein representations across models and tasks. Nat Methods 23, 796–804 (2026)</a>
             </p>
             <img src="/assets/imgs/RNS.jpeg" alt="RNS" width="100%" >
         </div>
     </div>
+    <div class="project" >
+        <h3 class="">RNS with accelerated mode for protein residues and metagenomic reads <span class="wip-tag">Work in progress</span></h3>
+        <div class="project-panel">
+            <p>An accelerated mode of the Random Neighbor Score (RNS) for quantifying representation uncertainty of individual protein residues and metagenomic reads at scale.</p>
+        </div>
+    </div>
+</section>
+
+<section class="box-content research-theme">
+    <h2>Metagenomics &amp; reference-free function discovery</h2>
+    <p class="theme-lead">Reference-free discovery of molecular function in metagenomes using DNA language models.</p>
     <div class="project" >
             <h3 class="">Development of LMs for novel reference-free metagenomic annotation</h3>
             <div class="project-panel">
@@ -24,19 +43,32 @@
                     REBEAN does not rely on sequence comparisons, thus enabling higher coverage and faster and
                     more generalizable analysis of metagenomic samples, even when our understanding of the encoded
                     functions is limited. Using REBEAN, we mined marine metagenomes to uncover numerous novel, i.e.
-                    previously unseen, oxidoreductases, thereby lighting a path through the microbial “dark matter.
+                    previously unseen, oxidoreductases, thereby lighting a path through the microbial “dark matter.”
                 <br>
                 <br>
-                
-                <span><strong>Publication: </strong></span><a href="http://dx.doi.org/10.1101/2024.12.10.627786" target="_blank">bioRxiv</a>
+
+                <span><strong>Publication: </strong></span><a href="http://dx.doi.org/10.1101/2024.12.10.627786" target="_blank" rel="noopener">bioRxiv</a>
                 </p>
                 <img src="/assets/imgs/REBEAN_GAbs.png" alt="REBEAN graphical abstract" width="100%" >
             </div>
         </div>
         <div class="project" >
+            <h3 class="">REBEAN end-to-end Nextflow pipeline for novel enzyme mining <span class="wip-tag">Work in progress</span></h3>
+            <div class="project-panel">
+                <p>An end-to-end Nextflow pipeline that operationalizes REBEAN for novel enzyme mining from metagenome-assembled genomes and reads at scale.</p>
+                <br>
+                <span><strong>Source (private): </strong></span><a href="https://github.com/rpkarandev/mag-rebean" target="_blank" rel="noopener">https://github.com/rpkarandev/mag-rebean</a>
+            </div>
+        </div>
+</section>
+
+<section class="box-content research-theme">
+    <h2>Protein function annotation &amp; assessment</h2>
+    <p class="theme-lead">New ways to predict and rigorously evaluate protein function beyond alignment and fixed ontologies.</p>
+        <div class="project" >
             <h3 class="">A protein pair-based assessment of in silico prediction tools</h3>
             <div class="project-panel">
-                <p> To address the sequencing-accelerated annotation gap, we evaluated the ability of <i>in silico</i> 
+                <p> To address the sequencing-accelerated annotation gap, we evaluated the ability of <i>in silico</i>
                     protein function prediction tools to annotate orphan proteins, identified in metagenomes.
                      Lacking the “ground truth” functional annotations, we transformed the assessment
                       of function prediction into evaluation of functional similarity of protein pairs. Thus transcending
@@ -44,10 +76,23 @@
                          methods.
                     <br>
                     <br>
-                
-                    <span><strong>Publication: </strong></span><a href="https://doi.org/10.1093/bioinformatics/btaf035" target="_blank">R Prabakaran, Yana Bromberg, Functional profiling of the sequence stockpile: a protein pair-based assessment of in silico prediction tools, Bioinformatics, Volume 41, Issue 2, February 2025, btaf035</a>
-                    <br><span><strong>Source: </strong></span><a href="https://bitbucket.org/bromberglab/siblings-detector/" target="_blank">https://bitbucket.org/bromberglab/siblings-detector/</a>
+
+                    <span><strong>Publication: </strong></span><a href="https://doi.org/10.1093/bioinformatics/btaf035" target="_blank" rel="noopener">R Prabakaran, Yana Bromberg, Functional profiling of the sequence stockpile: a protein pair-based assessment of in silico prediction tools, Bioinformatics, Volume 41, Issue 2, February 2025, btaf035</a>
+                    <br><span><strong>Source: </strong></span><a href="https://bitbucket.org/bromberglab/siblings-detector/" target="_blank" rel="noopener">https://bitbucket.org/bromberglab/siblings-detector/</a>
                     <br>
+                </p>
+            </div>
+        </div>
+        <div class="project" >
+            <h3 class="">A siamese-transformer-twin model to identify protein pairs of same function.</h3>
+            <div class="project-panel">
+                <p>We built a siamese model based on transformer architecture to identify protein-pairs of same function.
+                    The model was trained using contrastive loss.
+                <br>
+                <br>
+
+                <span><strong>Source (private): </strong></span><a href="https://bitbucket.org/bromberglab/siamtwinprot/src/main/" target="_blank" rel="noopener">https://bitbucket.org/bromberglab/siamtwinprot/src/main/</a>
+                <br>
                 </p>
             </div>
         </div>
@@ -55,15 +100,20 @@
             <h3 class="">Variant effect prediction in the age of machine learning</h3>
             <div class="project-panel">
                 <p>A comprehensive review and assessment of variant/mutation effect predictors.
-                This collaborative project includes evaluation on multiple datasets 
+                This collaborative project includes evaluation on multiple datasets
                 - representing different aspects of pathogenic effect.
                 <br>
                 <br>
-                
-                <span><strong>Publication: </strong></span><a href="https://cshperspectives.cshlp.org/content/16/7/a041467.short" target="_blank">Bromberg Y, Prabakaran R, Kabir A, Shehu A. Variant Effect Prediction in the Age of Machine Learning. Cold Spring Harb Perspect Biol. 2024 Jul 1;16(7):a041467.</a>
+
+                <span><strong>Publication: </strong></span><a href="https://cshperspectives.cshlp.org/content/16/7/a041467.short" target="_blank" rel="noopener">Bromberg Y, Prabakaran R, Kabir A, Shehu A. Variant Effect Prediction in the Age of Machine Learning. Cold Spring Harb Perspect Biol. 2024 Jul 1;16(7):a041467.</a>
                 </p>
             </div>
         </div>
+</section>
+
+<section class="box-content research-theme">
+    <h2>Protein sequence&ndash;structure, aggregation &amp; evolution</h2>
+    <p class="theme-lead">Sequence- and structure-level analysis of protein aggregation and evolutionary signal.</p>
         <div class="project" >
             <h3 class="">Tracing extant metal-binding spheres in protein structural space </h3>
             <div class="project-panel">
@@ -71,49 +121,20 @@
             </div>
         </div>
         <div class="project" >
-            <h3 class="">A siamese-transformer-twin model to identify protein pairs of same function.</h3>
-            <div class="project-panel">
-                <p>We built a siamese model based on transfomer architecture to identify protein-pairs of same function.
-                    The model was trained using contrastive loss.
-                <br>
-                <br>
-                
-                <span><strong>Source (private): </strong></span><a href="https://bitbucket.org/bromberglab/siamtwinprot/src/main/" target="_blank">https://bitbucket.org/bromberglab/siamtwinprot/src/main/</a>
-                <br>
-                </p>
-            </div>
-        </div>
-       
-        <div class="project" >
-            <h3 class="">HySEIQR: Incorporation of quarantine and lockdown regulations into SEIQR model to predict COVID-19 progression</h3>
-            <div class="project-panel">
-                <p>A novel hybrid SEIQR model incorporating the effect of quarantine and lockdown regulations for COVID-19
-                <br>
-                <br>
-                
-                <span><strong>Publication: </strong></span><a href="https://doi.org/10.1038/s41598-021-03436-z" target="_blank">Prabakaran, R., Jemimah, S., Rawat, P. et al. A novel hybrid SEIQR model incorporating the effect of quarantine and lockdown regulations for COVID-19. Sci Rep 11, 24073 (2021).</a>
-                <br>
-                <span><strong>Webserver: </strong></span><a href="https://web.iitm.ac.in/bioinfo2/covid19hyseiqr/update" target="_blank">https://web.iitm.ac.in/bioinfo2/covid19hyseiqr/</a>
-                
-                </p>
-            </div>
-        </div>
-       
-        <div class="project" >
             <h3 class="">Systematic study of factors contributing to peptide aggregation through extensive MD simulations</h3>
             <div class="project-panel">
-                <p>Aggregation of therapeutic monoclonal antibodies (mAbs) can negatively affect their chemistry, manufacturing, 
-                    and control attributes and lead to undesirable immune responses in patients. 
-                    The disruption of short sequence motifs called aggregation prone 
+                <p>Aggregation of therapeutic monoclonal antibodies (mAbs) can negatively affect their chemistry, manufacturing,
+                    and control attributes and lead to undesirable immune responses in patients.
+                    The disruption of short sequence motifs called aggregation prone
                      regions (APRs) found in amino acid sequences of mAb candidates can potentially mitigate their aggregation.
-                      In this work, we have performed molecular dynamics simulations to study the aggregation of an APR (VLVIY) 
-                      found in λ light chains of human antibodies and its single point mutant KLVIY. Eighteen different multicopy 
+                      In this work, we have performed molecular dynamics simulations to study the aggregation of an APR (VLVIY)
+                      found in λ light chains of human antibodies and its single point mutant KLVIY. Eighteen different multicopy
                       peptide simulation systems of "VLVIY" and "KLVIY" were constructed by varying their concentrations, temperatures,
-                       termini capping, and flanking gate-keeper regions. 
+                       termini capping, and flanking gate-keeper regions.
                 <br>
                 <br>
-                
-                <span><strong>Publication: </strong></span><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/prot.26230" target="_blank">Prabakaran, R., Rawat, P., Yasuo, N., Sekijima, M., Kumar, S., & Gromiha, M. M. (2022). Effect of charged mutation on aggregation of a pentapeptide: Insights from molecular dynamics simulations. Proteins, 90(2), 405–417.</a>
+
+                <span><strong>Publication: </strong></span><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/prot.26230" target="_blank" rel="noopener">Prabakaran, R., Rawat, P., Yasuo, N., Sekijima, M., Kumar, S., & Gromiha, M. M. (2022). Effect of charged mutation on aggregation of a pentapeptide: Insights from molecular dynamics simulations. Proteins, 90(2), 405–417.</a>
                 <br>
                 </p>
             </div>
@@ -121,9 +142,9 @@
         <div class="project" >
             <h3 class="">Development of ML and statistical models to predict protein aggregation</h3>
             <div class="project-panel">
-                <p>We studied and reviewed mechanistic models, kinetic models, ML tools and molecular dynamics approaches 
-                    used to study aggregation-prone region, aggregation propensity and aggregation rate of peptides and proteins. 
-                    This review led to development of new tools to predict aggregation prone regions and 
+                <p>We studied and reviewed mechanistic models, kinetic models, ML tools and molecular dynamics approaches
+                    used to study aggregation-prone region, aggregation propensity and aggregation rate of peptides and proteins.
+                    This review led to development of new tools to predict aggregation prone regions and
                     aggregation rates: ANuPP, AggreRATE-Pred & AbsoluRATE.
 
                 <br>
@@ -131,8 +152,8 @@
                 <span><strong>Selected publications: </strong></span>
                 <br>
                 <ul>
-                    <li><a href="https://www.sciencedirect.com/science/article/pii/S0022283620306252" target="_blank">Prabakaran, R., Rawat, P., Kumar, S., & Michael Gromiha, M. (2021). ANuPP: A Versatile Tool to Predict Aggregation Nucleating Regions in Peptides and Proteins. Journal of molecular biology, 433(11), 166707.</a></li>
-                    <li><a href="https://doi.org/10.1007/s12551-021-00778-w" target="_blank">Prabakaran, R., Rawat, P., Thangakani, A.M. et al. Protein aggregation: in silico algorithms and applications. Biophys Rev 13, 71–89 (2021).</a></li>
+                    <li><a href="https://www.sciencedirect.com/science/article/pii/S0022283620306252" target="_blank" rel="noopener">Prabakaran, R., Rawat, P., Kumar, S., & Michael Gromiha, M. (2021). ANuPP: A Versatile Tool to Predict Aggregation Nucleating Regions in Peptides and Proteins. Journal of molecular biology, 433(11), 166707.</a></li>
+                    <li><a href="https://doi.org/10.1007/s12551-021-00778-w" target="_blank" rel="noopener">Prabakaran, R., Rawat, P., Thangakani, A.M. et al. Protein aggregation: in silico algorithms and applications. Biophys Rev 13, 71–89 (2021).</a></li>
                 </ul>
             </p>
             </div>
@@ -141,15 +162,32 @@
             <h3 class="">Proteome-scale sequence & structural analysis of aggregation propensity</h3>
             <div class="project-panel">
                 <p>We surveyed the incidences of aggregation prone regions (APRs) in multiple proteomes
-                    by using sequences of experimentally validated amyloid‐fibril forming peptides and via 
+                    by using sequences of experimentally validated amyloid‐fibril forming peptides and via
                     computational prediction tools.
                 <br>
                 <br>
-                <span><strong>Publication: </strong></span><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/prot.25276" target="_blank">Prabakaran, R., Goel, D., Kumar, S., & Gromiha, M. M. (2017). Aggregation prone regions in human proteome: Insights from large-scale data analyses. Proteins, 85(6), 1099–1118.</a>
-                
+                <span><strong>Publication: </strong></span><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/prot.25276" target="_blank" rel="noopener">Prabakaran, R., Goel, D., Kumar, S., & Gromiha, M. M. (2017). Aggregation prone regions in human proteome: Insights from large-scale data analyses. Proteins, 85(6), 1099–1118.</a>
+
                 </p>
             </div>
         </div>
-    
 </section>
 
+<section class="box-content research-theme">
+    <h2>Other</h2>
+    <p class="theme-lead">Additional modeling work.</p>
+        <div class="project" >
+            <h3 class="">HySEIQR: Incorporation of quarantine and lockdown regulations into SEIQR model to predict COVID-19 progression</h3>
+            <div class="project-panel">
+                <p>A novel hybrid SEIQR model incorporating the effect of quarantine and lockdown regulations for COVID-19
+                <br>
+                <br>
+
+                <span><strong>Publication: </strong></span><a href="https://doi.org/10.1038/s41598-021-03436-z" target="_blank" rel="noopener">Prabakaran, R., Jemimah, S., Rawat, P. et al. A novel hybrid SEIQR model incorporating the effect of quarantine and lockdown regulations for COVID-19. Sci Rep 11, 24073 (2021).</a>
+                <br>
+                <span><strong>Webserver: </strong></span><a href="https://web.iitm.ac.in/bioinfo2/covid19hyseiqr/update" target="_blank" rel="noopener">https://web.iitm.ac.in/bioinfo2/covid19hyseiqr/</a>
+
+                </p>
+            </div>
+        </div>
+</section>

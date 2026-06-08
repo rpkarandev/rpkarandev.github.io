@@ -1,18 +1,21 @@
 <ul class="nav nav-tabs">
     <li class="nav-item">
-        <a class="nav-link {% if page.title == 'index' %} active {% endif %}" aria-current="page" href="/index">Profile</a>
+        <a class="nav-link {% if page.nav_id == 'profile' %} active {% endif %}" aria-current="page" href="/">Profile</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link {% if page.title == 'Projects' %} active {% endif %}" href="/projects">Research</a>
+      <a class="nav-link {% if page.nav_id == 'research' %} active {% endif %}" href="/projects/">Research</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link {% if page.title == 'Publications' %} active {% endif %}" href="/publications">Publications</a>
+      <a class="nav-link {% if page.nav_id == 'publications' %} active {% endif %}" href="/publications/">Publications</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link {% if page.title == 'Conferences' %} active {% endif %}" href="/conferences">Conferences</a>
+      <a class="nav-link {% if page.nav_id == 'news' %} active {% endif %}" href="/news/">News</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link {% if page.title == 'Contact' %} active {% endif %}" href="/contact">Contact me</a>
+      <a class="nav-link {% if page.nav_id == 'conferences' %} active {% endif %}" href="/conferences/">Talks</a>
     </li>
-  
+    <li class="nav-item">
+        <a class="nav-link {% if page.nav_id == 'contact' %} active {% endif %}" href="/contact/">Contact me</a>
+    </li>
+
 </ul>

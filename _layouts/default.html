@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prabakaran R</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
     rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="apple-touch-icon" href="/assets/imgs/prof1.png">
 
     <!-- Vendor CSS Files -->
     <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -14,71 +19,31 @@
     <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="/assets/vendor/venobox/venobox.css" rel="stylesheet">
     <link href="/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <!-- custom -->
+    <!-- custom -->
     <link rel="stylesheet" href="/assets/style.css">
-    <!--link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}"-->
     <link rel="stylesheet" href="/assets/css/custom.css">
-    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 
-    <script> 
-        $(function () {
-            var includes = $('[data-include]')
-            $.each(includes, function () {
-              var file = '_site/' + $(this).data('include') + '.html'
-              $(this).load(file)
-            })
-          })
-    </script> 
-
+    {% seo %}
 </head>
 <body>
     <!-- Header -->
-    
+
     {% include banner.html %}
-    
+
     <div class="container">
         <!-- Main Content -->
         <main class="main-content">
            {% include navbar.html %}
-           
+
                 {{content}}
 
         </main>
 
         {% include sidebar.html %}
-      
+
     </div>
 
-    <script src="assets/script.js">
+    <script src="/assets/script.js"></script>
 
-        function VerticalTimeline( element ) {
-            this.element = element;
-            this.blocks = this.element.getElementsByClassName("cd-timeline__block");
-            this.images = this.element.getElementsByClassName("cd-timeline__img");
-            this.contents = this.element.getElementsByClassName("cd-timeline__content");
-            // ..
-         };
-         
-         VerticalTimeline.prototype.showBlocks = function() {
-            var self = this;
-            for( var i = 0; i < this.blocks.length; i++) {
-               (function(i){
-                  if( self.contents[i].classList.contains("cd-timeline__content--hidden") && self.blocks[i].getBoundingClientRect().top <= window.innerHeight*self.offset ) {
-                     // add bounce-in animation
-                     self.images[i].classList.add("cd-timeline__img--bounce-in");
-                     self.contents[i].classList.add("cd-timeline__content--bounce-in");
-                     self.images[i].classList.remove("cd-timeline__img--hidden");
-                     self.contents[i].classList.remove("cd-timeline__content--hidden");
-                  }
-               })(i);
-            }
-         };
-    </script>
-
-
-    
 </body>
-{% include banner.html %}
 </html>
-
-

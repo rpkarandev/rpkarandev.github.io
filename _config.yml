@@ -1,6 +1,14 @@
-title: Prabakaran R
-url: "https://rpkarandev.github.io/"
-baseurl: "/"
+title: R. Prabakaran
+url: "https://rpkarandev.github.io"
+baseurl: ""
+
+description: >-
+  R. Prabakaran — computational biologist developing machine learning and biological
+  language models for protein function prediction, metagenomic annotation, molecular
+  evolution, and protein aggregation.
+
+author: R. Prabakaran
+lang: en
 
 theme: minima
 markdown: kramdown
@@ -11,12 +19,34 @@ minima:
   custom_css:
     - assets/style.css
 
+# Social profiles for SEO / JSON-LD (sameAs)
+social:
+  name: R. Prabakaran
+  links:
+    - https://orcid.org/0000-0002-0172-3716
+    - https://scholar.google.com/citations?user=7aAKswUAAAAJ&hl=en
+    - https://www.linkedin.com/in/prabakaran-ramakrishnan-87792418/
+    - https://github.com/rpkarandev
+
+twitter:
+  card: summary
+
+# Default Open Graph image used for link previews
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/imgs/prof1.png
 
 tracking_id: #
 
 footer: yes
 footer_url: "https://github.com/rpkarandev"
 footer_text: ""
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 sass:
     style: compressed
@@ -25,12 +55,3 @@ sass:
 scholar:
   style: modern-language-association
   bibliography_template: bib
-#nav:
-#  - name: "Publication"
-#   link: "publication"
-
-# - name: "Resume"
-#   link: "resume.pdf"
-# - name: "Contact"
-#   link: "contact"
-
