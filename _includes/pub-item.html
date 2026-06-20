@@ -13,9 +13,9 @@
 {%- endfor -%}
 {%- comment -%} match Scholar citation count by normalized title prefix {%- endcomment -%}
 {%- assign cites = "" -%}
-{%- assign ckey = citation.Title | downcase | replace: "-", " " | replace: ":", " " | strip | truncate: 30, "" -%}
+{%- assign ckey = citation.Title | downcase | replace: "‐", " " | replace: "-", " " | replace: ":", " " | replace: ",", " " | replace: ".", " " | strip -%}
 {%- for art in site.data.scholar.articles -%}
-  {%- assign akey = art.title | downcase | replace: "-", " " | replace: ":", " " | strip | truncate: 30, "" -%}
+  {%- assign akey = art.title | downcase | replace: "‐", " " | replace: "-", " " | replace: ":", " " | replace: ",", " " | replace: ".", " " | strip -%}
   {%- if akey == ckey -%}{%- assign cites = art.citations -%}{%- endif -%}
 {%- endfor -%}
 <li class="{% if citation.selected %}selected-pub{% endif %}">

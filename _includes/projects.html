@@ -9,10 +9,10 @@
     <h2>AI &amp; Representation Learning for biology</h2>
     <p class="theme-lead">Methods that probe and quantify what protein and DNA language models actually encode.</p>
     <div class="project" >
-        <h3 class="">Model and task agnostic evaluation of Protein/DNA embeddings' uncertainty</h3>
+        <h3 class="">Model- and task-agnostic evaluation of Protein/DNA embeddings' uncertainty</h3>
         <div class="project-panel">
             <p> "All models are wrong, ..." - we formulate Random Neighbor Score (RNS) to quantify the uncertainty of
-                biomolecule representations like protein, DNA or RNA - in a LM’s latent space.
+                biomolecule representations like protein, DNA or RNA - in a language model’s latent space.
             <br>
             <br>
 
@@ -25,6 +25,13 @@
         <h3 class="">RNS with accelerated mode for protein residues and metagenomic reads <span class="wip-tag">Work in progress</span></h3>
         <div class="project-panel">
             <p>A faster version of the Random Neighbor Score (RNS) that estimates representation uncertainty for individual protein residues and for large sets of metagenomic reads.</p>
+        </div>
+    </div>
+    <div class="project" >
+        <h3 class="">Linking metagenomes to the environment through representation learning <span class="wip-tag">Work in progress</span></h3>
+        <div class="project-panel">
+            <p>Microbiome and environment shape each other - leading to the evolution of the biotic and abiotic world as we see today. 
+                Understanding these earth-shaping relationships is impossible without a reliable representation of the microbiome and its environment.</p>
         </div>
     </div>
 </section>
@@ -53,11 +60,17 @@
             </div>
         </div>
         <div class="project" >
-            <h3 class="">REBEAN end-to-end Nextflow pipeline for novel enzyme mining <span class="wip-tag">Work in progress</span></h3>
+            <h3 class="">NF-EnzymeFinder: end-to-end Nextflow pipeline for novel enzyme mining <span class="wip-tag">Unpublished</span></h3>
             <div class="project-panel">
-                <p>An end-to-end Nextflow pipeline that runs REBEAN over metagenome-assembled genomes and reads to mine novel enzymes.</p>
+                <p>An end-to-end Nextflow pipeline that identifies enzymatic reads, assembles them into proteins, and delivers novel enzymes with predicted structures.</p>
                 <br>
                 <span><strong>Source (private): </strong></span><a href="https://github.com/rpkarandev/mag-rebean" target="_blank" rel="noopener">https://github.com/rpkarandev/mag-rebean</a>
+            </div>
+        </div>
+        <div class="project" >
+            <h3 class="">Read-level AMR detection for metagenomic surveillance <span class="wip-tag">Work in progress</span></h3>
+            <div class="project-panel">
+                <p>Detecting antimicrobial resistance (AMR) directly at the whole-metagenome sequencing (WMS) read level, enabling rapid metagenomic surveillance of resistance across microbial communities.</p>
             </div>
         </div>
 </section>
@@ -71,8 +84,8 @@
                 <p> To address the sequencing-accelerated annotation gap, we evaluated the ability of <i>in silico</i>
                     protein function prediction tools to annotate orphan proteins, identified in metagenomes.
                      Lacking the “ground truth” functional annotations, we transformed the assessment
-                      of function prediction into evaluation of functional similarity of protein pairs. Thus transcending
-                        the limitations of functional annotation vocabularies, providing a means to assess different-ontology annotation
+                      of function prediction into evaluation of functional similarity of protein pairs. This transcends
+                        the limitations of functional annotation vocabularies, and provides a means to assess different-ontology annotation
                          methods.
                     <br>
                     <br>
@@ -84,9 +97,9 @@
             </div>
         </div>
         <div class="project" >
-            <h3 class="">A siamese-transformer-twin model to identify protein pairs of same function.</h3>
+            <h3 class="">A siamese-transformer-twin model to identify protein pairs of the same function</h3>
             <div class="project-panel">
-                <p>We built a siamese model based on transformer architecture to identify protein-pairs of same function.
+                <p>We built a siamese model based on transformer architecture to identify protein pairs of the same function.
                     The model was trained using contrastive loss.
                 <br>
                 <br>
@@ -174,8 +187,8 @@
 </section>
 
 <section class="box-content research-theme">
-    <h2>Other</h2>
-    <p class="theme-lead">Additional modeling work.</p>
+    <h2>Other modeling work</h2>
+    <p class="theme-lead">Epidemiological and other computational modeling.</p>
         <div class="project" >
             <h3 class="">HySEIQR: Incorporation of quarantine and lockdown regulations into SEIQR model to predict COVID-19 progression</h3>
             <div class="project-panel">

@@ -4,6 +4,11 @@
 
 .box-content{
     width:100%;
+    margin-bottom: 26px;
+}
+
+.project {
+    margin-bottom: 22px;
 }
 
 body {
@@ -119,6 +124,13 @@ body {
     white-space: nowrap;
 }
 li.selected-pub::marker { color: var(--accent); }
+.pub-category {
+    color: var(--primary);
+    margin-top: 1.6rem;
+    margin-bottom: 0.4rem;
+    border-left: 4px solid var(--accent);
+    padding-left: 10px;
+}
 
 /* Scholar citation summary + per-year graph */
 .scholar-stats {
@@ -178,7 +190,7 @@ li.selected-pub::marker { color: var(--accent); }
     backdrop-filter: blur(8px);
     padding: 8px;
     border-radius: 14px;
-    box-shadow: 0 6px 18px rgba(15, 61, 62, 0.12);
+    box-shadow: 0 0 16px 2px rgba(37, 99, 235, 0.35);
     margin-bottom: 18px;
 }
 .nav-tabs, .nav-tabs .nav-item { list-style: none; }
@@ -217,8 +229,8 @@ li.selected-pub::marker { color: var(--accent); }
 }
 .page-quote blockquote {
     margin: 0;
-    font-family: 'Space Grotesk', 'Inter', sans-serif;
-    font-size: 1.25em;
+    font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
+    font-size: 1.35em;
     line-height: 1.45;
     color: var(--primary);
     font-style: italic;

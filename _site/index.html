@@ -95,12 +95,12 @@
         <li style="">
             <span class="" style="font-weight:bold;">Postdoctoral Fellow</span>
             <a class="float-right">2023-Present</a>
-            <p>Emory University, GA, USA </p>
+            <p>Bromberg Lab<br />Emory University, GA, USA </p>
         </li>
         <li style="">
             <span class="" style="font-weight:bold;">Postdoctoral Associate</span>
             <a class="float-right">2022-2023</a>
-            <p>Rutgers University, NJ, USA</p>
+            <p>Bromberg Lab<br />Rutgers University, NJ, USA</p>
         </li>
         <!--li style="">
             <span class="" style="font-weight:bold;">Project Associate, IIT Madras</span>
@@ -108,18 +108,18 @@
             <p>Indian Institute of Technology Madras, India</p>
         </li-->
         <li style="">
-            <span class="" style="font-weight:bold;">M.S. &amp; Ph.D.  Computational Biology</span>
+            <span class="" style="font-weight:bold;">M.S. &amp; Ph.D. in Computational Biology</span>
             <a class="float-right">2014-2022</a>
             <p>Indian Institute of Technology Madras, India <br />
             <i>Dissertation Title</i>: Sequence and structural studies of aggregation prone regions in proteins: Development of a prediction method and large-scale analysis</p>
         </li>
         <li style="background-color:rgb(245,245,245)">
-            <span class="">Functional software testing of clinical devices and data collection tools</span>
+            <span class="" style="font-weight:bold;">Associate - Functional test lead and analyst</span>
             <a class="float-right">2010-2014</a>
             <p>Cognizant Technology Solutions, India </p>
         </li>        
         <li style="">
-            <span class="" style="font-weight:bold;">B. Tech. Industrial Biotechnology</span>
+            <span class="" style="font-weight:bold;">B. Tech. in Industrial Biotechnology</span>
             <a class="float-right">2006-2010</a>
             <p>Anna University, India <br />
             <i>Dissertation Title</i>: Cloning and expression of the synthetic insulin gene in Kluyveromyces lactis expression system</p>
@@ -179,23 +179,24 @@
 <section class="box-content">
     <h2>Tool developments</h2>
     <div class="project">
-        <h3 class="">Quantifying uncertainty in Protein Representations Across Models and Tasks</h3>
+        <h3 class="">Quantifying uncertainty in protein representations across models and tasks</h3>
         <div class="project-panel">
             <p> "All models are wrong, ..." - we formulate Random Neighbor Score (RNS) to quantify the uncertainty of
-                biomolecule representations like protein, DNA or RNA - in a LM’s latent space.                 
+                biomolecule representations like protein, DNA or RNA - in a language model’s latent space.                 
             <br />
             <br />
             <span><strong>Source: </strong></span><a href="https://bitbucket.org/bromberglab/rns/src/main/" target="_blank" rel="noopener">https://bitbucket.org/bromberglab/rns/src/main/</a>
             <br />
             <span><strong>Publication: </strong></span><a href="https://doi.org/10.1038/s41592-026-03028-7" target="_blank" rel="noopener">Prabakaran, R*., Bromberg, Y*. Quantifying uncertainty in protein representations across models and tasks. Nat Methods 23, 796–804 (2026)</a>
             </p>
+            <img src="/assets/imgs/RNS.jpeg" alt="Random Neighbor Score (RNS)" width="100%" />
         </div>
     </div>
 
     <div class="project">
         <h3 class="">REBEAN: Read Embedding Based Enzyme ANnotation</h3>
         <div class="project-panel">
-            <p>REBEAN is a DNA language Model for enzymatic annotation of sequencing reads. REBEAN is built for discovery of enzymatic function in both known and unknown sequence space mitigating drawbacks of alignment and translation-based approaches.</p>
+            <p>REBEAN is a DNA language model for enzymatic annotation of sequencing reads. REBEAN is built for discovery of enzymatic function in both known and unknown sequence space mitigating drawbacks of alignment and translation-based approaches.</p>
             <br />
                 
             <p><span><strong>Webserver: </strong></span><a href="https://services.bromberglab.org/rebean/submit" target="_blank" rel="noopener">https://services.bromberglab.org/rebean/submit</a>
@@ -203,12 +204,13 @@
                 <span><strong>Source: </strong></span><a href="https://bitbucket.org/bromberglab/rebeanpkg/src/main/" target="_blank" rel="noopener">https://bitbucket.org/bromberglab/rebeanpkg/src/main/</a>
                 <br />
                 <span><strong>Publication: </strong></span><a href="https://doi.org/10.1093/nar/gkaf836" target="_blank" rel="noopener">Prabakaran R* and Bromberg Y*, Deciphering enzymatic potential in metagenomic reads through DNA language models, Nucleic Acids Research, 53 (16), 2025, gkaf836</a></p>
+                <img src="/assets/imgs/REBEAN_GAbs.png" alt="REBEAN graphical abstract" width="100%" />
             </div>
     </div>
     <div class="project">
         <h3 class="">ANuPP: Aggregation Nucleation Prediction in Peptides and Proteins</h3>
         <div class="project-panel">
-            <p>Aggregation Nucleation Prediction in Peptides and Proteins (ANuPP) is a ensemble-classifier developed and trained to identify amyloid-fibril forming peptides and regions in protein sequences.</p>
+            <p>Aggregation Nucleation Prediction in Peptides and Proteins (ANuPP) is an ensemble classifier developed and trained to identify amyloid-fibril forming peptides and regions in protein sequences.</p>
             <br />
                 
             <p><span><strong>Webserver: </strong></span><a href="https://web.iitm.ac.in/bioinfo2/ANuPP/" target="_blank" rel="noopener">https://web.iitm.ac.in/bioinfo2/ANuPP/</a>
@@ -218,7 +220,15 @@
                 <span><strong>Publication: </strong></span><a href="https://doi.org/10.1016/j.jmb.2020.11.006" target="_blank" rel="noopener">Prabakaran R, Rawat P, Kumar S, &amp; Michael Gromiha M (2021). ANuPP: A Versatile Tool to Predict Aggregation Nucleating Regions in Peptides and Proteins. Journal of molecular biology, 433(11), 166707.</a></p>
             </div>
     </div>
-     
+    <div class="project">
+        <h3 class="">NF-EnzymeFinder: end-to-end Nextflow pipeline for novel enzyme mining <span class="wip-tag">Unpublished</span></h3>
+        <div class="project-panel">
+            <p>An end-to-end Nextflow pipeline that identifies enzymatic reads, assembles them into proteins, and delivers novel enzymes with predicted structures.</p>
+            <br />
+            <span><strong>Source (private): </strong></span><a href="https://github.com/rpkarandev/mag-rebean" target="_blank" rel="noopener">https://github.com/rpkarandev/mag-rebean</a>
+        </div>
+    </div>
+
 </section>
 
 <section class="box-content">
@@ -235,7 +245,7 @@
         </div>
     </div>
     <div class="project">
-        <h3 class="">Ab-Cov: A curated database for binding affinity and neutralization profiles of coronavirus-related antibodies</h3>
+        <h3 class="">Ab-CoV: A curated database for binding affinity and neutralization profiles of coronavirus-related antibodies</h3>
         <div class="project-panel">
             <p>Ab-CoV contains manually curated experimental binding affinity (KD) and neutralization profile (IC50 and EC50) of coronavirus-related antibodies along with in silico mutational scanning of epitope and paratope region for known structures and viral protein features.</p>
             <br />
@@ -248,12 +258,20 @@
     <div class="project">
         <h3 class="">CPAD 2.0: Curated Protein Aggregation Database</h3>
         <div class="project-panel">
-            <p>A curated databases of aggregating peptides, proteins and aggregation prone regions.</p>
+            <p>A curated database of aggregating peptides, proteins and aggregation prone regions.</p>
             <br />
                 
             <p><span><strong>Database: </strong></span><a href="https://web.iitm.ac.in/bioinfo2/cpad2" target="_blank" rel="noopener">https://web.iitm.ac.in/bioinfo2/cpad2</a>
                 <br />
                 <span><strong>Publication: </strong></span><a href="https://doi.org/10.1080/13506129.2020.1715363" target="_blank" rel="noopener">Rawat P, Prabakaran R, Sakthivel R, Mary Thangakani A, Kumar S, &amp; Gromiha M M (2020). CPAD 2.0: a repository of curated experimental data on aggregating proteins and peptides. Amyloid : the international journal of experimental and clinical investigation : the official journal of the International Society of Amyloidosis, 27(2), 128–133.</a></p>
+        </div>
+    </div>
+    <div class="project">
+        <h3 class="">UniProt ProtT5-Uncertainty Landscape <span class="wip-tag">Unpublished</span></h3>
+        <div class="project-panel">
+            <p>An uncertainty landscape of UniProt - 214,684,295 ProtT5 protein embeddings and their Random Neighbor Score (RNS) values and intrinsic dimensionalities (IDs) - a depiction of what is, and is not, learned by protein language models (pLMs).</p>
+            <br />
+            <span><strong>Related: </strong></span><a href="https://doi.org/10.1038/s41592-026-03028-7" target="_blank" rel="noopener">RNS, Nat Methods 23, 796–804 (2026)</a>
         </div>
     </div>
 </section>
@@ -275,7 +293,7 @@
 </section>
 
 <section class="box-content">
-    <h2>Other mentions</h2>
+    <h2>Awards &amp; service</h2>
     <ul>
         <li> 2025 Travel grant - FMS4BIO25 workshop, AAAI Conference on Artificial Intelligence </li>
         <li> 2024 Travel grant - CSHL Biological Data Science meeting at NY, USA </li>
@@ -326,13 +344,13 @@
         <h3 class="collapsible" style="">&#9660;  Machine learning</h3>
         <div class="skillset collapsible-content">
             <div class="skill-tags">
-                <span class="skill-tag">Language modelling</span>
+                <span class="skill-tag">Language modeling</span>
                 <span class="skill-tag">Graph Neural Networks</span>
                 <span class="skill-tag">Contrastive learning</span>
-                <span class="skill-tag">Self Organizing Maps</span>
+                <span class="skill-tag">Self-Organizing Maps</span>
                 <span class="skill-tag">Clustering</span>
-                <span class="skill-tag">Non-linear modelling</span>
-                <span class="skill-tag">Linear modelling</span>
+                <span class="skill-tag">Non-linear modeling</span>
+                <span class="skill-tag">Linear modeling</span>
             </div>
         </div>
 
@@ -357,7 +375,7 @@
             </div>
         </div>
 
-        <h3 class="collapsible" style="">&#9660;  Molecular modelling tools</h3>
+        <h3 class="collapsible" style="">&#9660;  Molecular modeling tools</h3>
         <div class="skillset collapsible-content">
             <div class="skill-tags">
                 <span class="skill-tag">GROMACS</span>
@@ -406,7 +424,7 @@
         <span class="badge badge-pill badge-dark"
         style="background-color:black;">Host-Microbe Interactions&nbsp;</span>
         <span class="badge badge-pill badge-dark"
-        style="background-color:rgb(57, 7, 7);">System-level modelling&nbsp;</span>
+        style="background-color:rgb(57, 7, 7);">System-level modeling&nbsp;</span>
 
     </div>
 

@@ -51,9 +51,15 @@ description: Peer-reviewed publications and preprints by R. Prabakaran in comput
 
   <h2>All publications</h2>
   <hr><br>
-  {% assign pub_list = site.data.publications | sort: "Year" | reverse %}
-  <ol>
-    {% for citation in pub_list %}{% include pub-item.html citation=citation %}{% endfor %}
-  </ol>
+  {% assign cat_order = "Biological Language Models, Uncertainty & Metagenomics|Protein Function & Variant Effect Prediction|Protein Aggregation, Amyloids & Developability|Therapeutic Antibodies & Amyloidosis|Other" | split: "|" %}
+  {% for cat in cat_order %}
+    {% assign group = site.data.publications | where: "category", cat | sort: "Year" | reverse %}
+    {% if group.size > 0 %}
+      <h3 class="pub-category">{{ cat }}</h3>
+      <ol>
+        {% for citation in group %}{% include pub-item.html citation=citation %}{% endfor %}
+      </ol>
+    {% endif %}
+  {% endfor %}
 </div>
 </section>

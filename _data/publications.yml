@@ -1,6 +1,7 @@
 # Each entry may include:
 #   doi:      e.g. 10.1038/s41592-026-03028-7  (renders a clickable link; omit if unknown)
 #   selected: true                              (highlights it in the "Selected" group)
+#   category:                                   (groups it on the Publications page; matches resume)
 # Citation counts come from _data/scholar.yml (matched by Title) — see tools/update_scholar.py
 
 - Authors: 'Prabakaran, R*; Bromberg, Yana*; '
@@ -11,7 +12,19 @@
   Pages: 796-804
   Year: '2026'
   Publisher: Nature Publishing Group
+  category: Biological Language Models, Uncertainty & Metagenomics
   doi: 10.1038/s41592-026-03028-7
+  selected: true
+- Authors: 'Prabakaran, R*; Bromberg, Yana*; '
+  Title: 'Deciphering enzymatic potential in metagenomic reads through DNA language models'
+  Publication: 'Nucleic Acids Research'
+  Volume: '53'
+  Number: '16'
+  Pages: 'gkaf836'
+  Year: '2025'
+  Publisher: Oxford University Press
+  category: Biological Language Models, Uncertainty & Metagenomics
+  doi: 10.1093/nar/gkaf836
   selected: true
 - Authors: 'Prabakaran, R; Bromberg, Yana; '
   Title: 'Functional profiling of the sequence stockpile: a protein pair-based assessment
@@ -22,26 +35,18 @@
   Pages: btaf035
   Year: '2025'
   Publisher: Oxford University Press
+  category: Protein Function & Variant Effect Prediction
   doi: 10.1093/bioinformatics/btaf035
-- Authors: 'Rawat, Puneet; Crescioli, Silvia; Prabakaran, R; Sharma, Divya; Greiff,
-    Victor; Reichert, Janice M; '
-  Title: 'YAbS: The Antibody Society’s antibody therapeutics database'
-  Publication: mAbs
-  Volume: '17'
-  Number: '1'
-  Pages: '2468845'
-  Year: '2025'
-  Publisher: Taylor & Francis
-  doi: 10.1080/19420862.2025.2468845
-- Authors: 'Prabakaran, R*; Bromberg, Yana*; '
-  Title: 'Deciphering enzymatic potential in metagenomic reads through DNA language models'
-  Publication: 'Nucleic Acids Research'
-  Volume: '53'
-  Number: '16'
-  Pages: 'gkaf836'
-  Year: '2025'
-  Publisher: Oxford University Press
-  doi: 10.1093/nar/gkaf836
+- Authors: 'Bromberg, Yana; Prabakaran, R; Kabir, Anowarul; Shehu, Amarda; '
+  Title: Variant effect prediction in the age of machine learning
+  Publication: Cold Spring Harbor Perspectives in Biology
+  Volume: '16'
+  Number: '7'
+  Pages: a041467
+  Year: '2024'
+  Publisher: Cold Spring Harbor Lab
+  category: Protein Function & Variant Effect Prediction
+  doi: 10.1101/cshperspect.a041467
   selected: true
 - Authors: 'Prabakaran, R; Rawat, Puneet; Kumar, Sandeep; Gromiha, M Michael; '
   Title: 'ANuPP: a versatile tool to predict aggregation nucleating regions in peptides
@@ -52,39 +57,8 @@
   Pages: '166707'
   Year: '2021'
   Publisher: Academic Press
+  category: Protein Aggregation, Amyloids & Developability
   doi: 10.1016/j.jmb.2020.11.006
-  selected: true
-- Authors: 'Rawat, Puneet; Prabakaran, R; Sakthivel, R; Mary Thangakani, A; Kumar,
-    Sandeep; Gromiha, M Michael; '
-  Title: 'CPAD 2.0: a repository of curated experimental data on aggregating proteins
-    and peptides'
-  Publication: Amyloid
-  Volume: '27'
-  Number: '2'
-  Pages: 128-133
-  Year: '2020'
-  Publisher: Taylor & Francis
-  doi: 10.1080/13506129.2020.1715363
-- Authors: 'Rawat, Puneet; Prabakaran, R; Kumar, Sandeep; Gromiha, M Michael; '
-  Title: 'AggreRATE-Pred: a mathematical model for the prediction of change in aggregation
-    rate upon point mutation'
-  Publication: Bioinformatics
-  Volume: '36'
-  Number: '5'
-  Pages: 1439-1444
-  Year: '2020'
-  Publisher: Oxford University Press
-  doi: 10.1093/bioinformatics/btz764
-- Authors: 'Prabakaran, R; Goel, Dhruv; Kumar, Sandeep; Gromiha, M Michael; '
-  Title: 'Aggregation prone regions in human proteome: Insights from large‐scale data
-    analyses'
-  Publication: 'Proteins: Structure, Function, and Bioinformatics'
-  Volume: '85'
-  Number: '6'
-  Pages: 1099-1118
-  Year: '2017'
-  Publisher: Wiley Online Library
-  doi: 10.1002/prot.25276
   selected: true
 - Authors: 'Prabakaran, R; Rawat, Puneet; Thangakani, A Mary; Kumar, Sandeep; Gromiha,
     M Michael; '
@@ -95,48 +69,20 @@
   Pages: 71-89
   Year: '2021'
   Publisher: Springer Berlin Heidelberg
+  category: Protein Aggregation, Amyloids & Developability
   doi: 10.1007/s12551-021-00778-w
   selected: true
-- Authors: 'Prabakaran, R; Nikam, Rahul; Kumar, Sandeep; Gromiha, M Michael; '
-  Title: Influence of Amino Acid Properties for Characterizing Amyloid Peptides in
-    Human Proteome
-  Publication: Intelligent Computing Theories and Application
-  Volume: '10362'
-  Number: ''
-  Pages: 541-548
-  Year: '2017'
-  Publisher: Springer, Cham
-  doi: 10.1007/978-3-319-63312-1_47
-- Authors: 'Rawat, Puneet; Prabakaran, R; Kumar, Sandeep; Gromiha, M Michael; '
-  Title: Exploring the sequence features determining amyloidosis in human antibody
-    light chains
-  Publication: Scientific Reports
-  Volume: '11'
-  Number: '1'
-  Pages: '13785'
-  Year: '2021'
-  Publisher: Nature Publishing Group UK London
-  doi: 10.1038/s41598-021-93019-9
-- Authors: 'Rawat, Puneet; Prabakaran, R; Kumar, Sandeep; Gromiha, M Michael; '
-  Title: 'AbsoluRATE: An in-silico method to predict the aggregation kinetics of native
-    proteins'
-  Publication: Biochimica et Biophysica Acta (BBA)-Proteins and Proteomics
-  Volume: '1869'
-  Number: '9'
-  Pages: '140682'
-  Year: '2021'
-  Publisher: Elsevier
-  doi: 10.1016/j.bbapap.2021.140682
-- Authors: 'Prabakaran, R; Rawat, Puneet; Kumar, Sandeep; Gromiha, M Michael; '
-  Title: Evaluation of in silico tools for the prediction of protein and peptide aggregation
-    on diverse datasets
-  Publication: Briefings in Bioinformatics
-  Volume: '22'
+- Authors: 'Prabakaran, R; Goel, Dhruv; Kumar, Sandeep; Gromiha, M Michael; '
+  Title: 'Aggregation prone regions in human proteome: Insights from large‐scale data
+    analyses'
+  Publication: 'Proteins: Structure, Function, and Bioinformatics'
+  Volume: '85'
   Number: '6'
-  Pages: bbab240
-  Year: '2021'
-  Publisher: Oxford University Press
-  doi: 10.1093/bib/bbab240
+  Pages: 1099-1118
+  Year: '2017'
+  Publisher: Wiley Online Library
+  category: Protein Aggregation, Amyloids & Developability
+  doi: 10.1002/prot.25276
   selected: true
 - Authors: 'Prabakaran, R; Rawat, Puneet; Yasuo, Nobuaki; Sekijima, Masakazu; Kumar,
     Sandeep; Gromiha, M Michael; '
@@ -148,18 +94,76 @@
   Pages: 405-417
   Year: '2022'
   Publisher: Wiley Online Library
+  category: Protein Aggregation, Amyloids & Developability
   doi: 10.1002/prot.26230
-- Authors: 'Prabakaran, R; Jemimah, Sherlyn; Rawat, Puneet; Sharma, Divya; Gromiha,
-    M Michael; '
-  Title: A novel hybrid SEIQR model incorporating the effect of quarantine and lockdown
-    regulations for COVID-19
-  Publication: Scientific reports
-  Volume: '11'
-  Number: '1'
-  Pages: '24073'
+- Authors: 'Prabakaran, R; Rawat, Puneet; Kumar, Sandeep; Gromiha, M Michael; '
+  Title: Evaluation of in silico tools for the prediction of protein and peptide aggregation
+    on diverse datasets
+  Publication: Briefings in Bioinformatics
+  Volume: '22'
+  Number: '6'
+  Pages: bbab240
   Year: '2021'
-  Publisher: Nature Publishing Group UK London
-  doi: 10.1038/s41598-021-03436-z
+  Publisher: Oxford University Press
+  category: Protein Aggregation, Amyloids & Developability
+  doi: 10.1093/bib/bbab240
+  selected: true
+- Authors: 'Rawat, Puneet; Prabakaran, R; Kumar, Sandeep; Gromiha, M Michael; '
+  Title: 'AbsoluRATE: An in-silico method to predict the aggregation kinetics of native
+    proteins'
+  Publication: Biochimica et Biophysica Acta (BBA)-Proteins and Proteomics
+  Volume: '1869'
+  Number: '9'
+  Pages: '140682'
+  Year: '2021'
+  Publisher: Elsevier
+  category: Protein Aggregation, Amyloids & Developability
+  doi: 10.1016/j.bbapap.2021.140682
+- Authors: 'Rawat, Puneet; Prabakaran, R; Kumar, Sandeep; Gromiha, M Michael; '
+  Title: 'AggreRATE-Pred: a mathematical model for the prediction of change in aggregation
+    rate upon point mutation'
+  Publication: Bioinformatics
+  Volume: '36'
+  Number: '5'
+  Pages: 1439-1444
+  Year: '2020'
+  Publisher: Oxford University Press
+  category: Protein Aggregation, Amyloids & Developability
+  doi: 10.1093/bioinformatics/btz764
+- Authors: 'Rawat, Puneet; Prabakaran, R; Sakthivel, R; Mary Thangakani, A; Kumar,
+    Sandeep; Gromiha, M Michael; '
+  Title: 'CPAD 2.0: a repository of curated experimental data on aggregating proteins
+    and peptides'
+  Publication: Amyloid
+  Volume: '27'
+  Number: '2'
+  Pages: 128-133
+  Year: '2020'
+  Publisher: Taylor & Francis
+  category: Protein Aggregation, Amyloids & Developability
+  doi: 10.1080/13506129.2020.1715363
+- Authors: 'Prabakaran, R; Nikam, Rahul; Kumar, Sandeep; Gromiha, M Michael; '
+  Title: Influence of Amino Acid Properties for Characterizing Amyloid Peptides in
+    Human Proteome
+  Publication: Intelligent Computing Theories and Application
+  Volume: '10362'
+  Number: ''
+  Pages: 541-548
+  Year: '2017'
+  Publisher: Springer, Cham
+  category: Protein Aggregation, Amyloids & Developability
+  doi: 10.1007/978-3-319-63312-1_47
+- Authors: 'Rawat, Puneet; Crescioli, Silvia; Prabakaran, R; Sharma, Divya; Greiff,
+    Victor; Reichert, Janice M; '
+  Title: 'YAbS: The Antibody Society’s antibody therapeutics database'
+  Publication: mAbs
+  Volume: '17'
+  Number: '1'
+  Pages: '2468845'
+  Year: '2025'
+  Publisher: Taylor & Francis
+  category: Therapeutic Antibodies & Amyloidosis
+  doi: 10.1080/19420862.2025.2468845
 - Authors: 'Rawat, Puneet; Sharma, Divya; Prabakaran, R; Ridha, Fathima; Mohkhedkar,
     Mugdha; Janakiraman, Vani; Gromiha, M Michael; '
   Title: 'Ab-CoV: a curated database for binding affinity and neutralization profiles
@@ -170,14 +174,99 @@
   Pages: 4051-4052
   Year: '2022'
   Publisher: Oxford University Press
+  category: Therapeutic Antibodies & Amyloidosis
   doi: 10.1093/bioinformatics/btac439
-- Authors: 'Bromberg, Yana; Prabakaran, R; Kabir, Anowarul; Shehu, Amarda; '
-  Title: Variant effect prediction in the age of machine learning
-  Publication: Cold Spring Harbor Perspectives in Biology
-  Volume: '16'
-  Number: '7'
-  Pages: a041467
-  Year: '2024'
-  Publisher: Cold Spring Harbor Lab
-  doi: 10.1101/cshperspect.a041467
-  selected: true
+- Authors: 'Rawat, Puneet; Prabakaran, R; Kumar, Sandeep; Gromiha, M Michael; '
+  Title: Exploring the sequence features determining amyloidosis in human antibody
+    light chains
+  Publication: Scientific Reports
+  Volume: '11'
+  Number: '1'
+  Pages: '13785'
+  Year: '2021'
+  Publisher: Nature Publishing Group UK London
+  category: Therapeutic Antibodies & Amyloidosis
+  doi: 10.1038/s41598-021-93019-9
+- Authors: 'Prabakaran, R; Jemimah, Sherlyn; Rawat, Puneet; Sharma, Divya; Gromiha,
+    M Michael; '
+  Title: A novel hybrid SEIQR model incorporating the effect of quarantine and lockdown
+    regulations for COVID-19
+  Publication: Scientific reports
+  Volume: '11'
+  Number: '1'
+  Pages: '24073'
+  Year: '2021'
+  Publisher: Nature Publishing Group UK London
+  category: Other
+  doi: 10.1038/s41598-021-03436-z
+- Authors: 'Lekshmi, S; Shanmugam, N R Siva; Prabakaran, R; Rawat, Puneet; Gromiha,
+    M Michael; '
+  Title: 'Investigating protein aggregation in protein-carbohydrate interfaces using
+    sequence and structural features'
+  Publication: Biochimica et Biophysica Acta (BBA)-Proteins and Proteomics
+  Volume: '1874'
+  Number: '3'
+  Pages: '141131'
+  Year: '2026'
+  Publisher: Elsevier
+  category: Protein Aggregation, Amyloids & Developability
+  doi: 10.1016/j.bbapap.2026.141131
+- Authors: 'Rawat, Puneet; Prabakaran, R; Sharma, Divya; Mandala, Vasanth; Greiff,
+    Victor; Kumar, Sandeep; Gromiha, M Michael; '
+  Title: 'Investigating local sequence-structural attributes of amyloidogenic light
+    chain variable domains'
+  Publication: 'Proteins: Structure, Function, and Bioinformatics'
+  Volume: '93'
+  Number: '9'
+  Pages: 1451-1464
+  Year: '2025'
+  Publisher: Wiley Online Library
+  category: Therapeutic Antibodies & Amyloidosis
+  doi: 10.1002/prot.26815
+- Authors: 'Rawat, Puneet; Sharma, Divya; Pandey, Medha; Prabakaran, R; Gromiha, M
+    Michael; '
+  Title: 'Understanding the mutational frequency in SARS-CoV-2 proteome using structural
+    features'
+  Publication: Computers in Biology and Medicine
+  Volume: '147'
+  Number: ''
+  Pages: '105708'
+  Year: '2022'
+  Publisher: Elsevier
+  category: Other
+  doi: 10.1016/j.compbiomed.2022.105708
+- Authors: 'Prabakaran, R; Rawat, Puneet; Kumar, Sandeep; Gromiha, M Michael; '
+  Title: 'Deciphering the modulatory role of mutations in protein aggregation through
+    in silico methods'
+  Publication: 'Protein Mutations: Consequences on Structure, Functions, and Diseases (World Scientific)'
+  Volume: ''
+  Number: ''
+  Pages: 3-38
+  Year: '2025'
+  Publisher: World Scientific
+  category: Protein Aggregation, Amyloids & Developability
+  doi: 10.1142/9789811293269_0001
+- Authors: 'Rawat, Puneet; Smorodina, Eva; Sharma, Divya; Prabakaran, R; Wade, Jack;
+    Akbar, Rahmad; Singh, Amrinder; Kumar, Sandeep; Greiff, Victor; Gromiha, M Michael; '
+  Title: 'Computational biophysical analyses of antibody structure-function relationships
+    with emphasis on therapeutic antibody-based biologics'
+  Publication: 'Biopharmaceutical Informatics: Learning to Discover Developable Biotherapeutics (CRC Press)'
+  Volume: ''
+  Number: ''
+  Pages: 161-200
+  Year: '2025'
+  Publisher: CRC Press
+  category: Therapeutic Antibodies & Amyloidosis
+  doi: 10.1201/9781003300311-7
+- Authors: 'Rawat, Puneet; Prabakaran, R; Cardente, Niccolò; Kumar, Sandeep; Greiff,
+    Victor; Gromiha, M Michael; '
+  Title: 'Amylo-Pipe: an integrated web server for mechanistic and kinetic prediction
+    of protein and peptide aggregation'
+  Publication: bioRxiv
+  Volume: ''
+  Number: ''
+  Pages: ''
+  Year: '2026'
+  Publisher: Cold Spring Harbor Laboratory
+  category: Protein Aggregation, Amyloids & Developability
+  doi: 10.64898/2026.06.09.731090
