@@ -22,6 +22,23 @@
         </div>
     </div>
     <div class="project" >
+        <h3 class="">Mapping language-model uncertainty across the protein universe <span class="wip-tag">Work in progress</span></h3>
+        <div class="project-panel">
+            <p>Protein language models (pLMs) do not represent all of sequence space equally well, but their
+                uncertainty has never been charted at scale. We are computing the Random Neighbor Score (RNS) and
+                intrinsic dimensionality for all 214,684,295 ProtT5 embeddings of UniProt to build a map of the
+                known protein universe that separates the regions a pLM has genuinely learned from those it merely
+                interpolates. The resulting landscape shows where model-derived annotations can be trusted, and
+                where sequencing, experiment, and model development are still most needed.
+            <br>
+            <br>
+
+            <span><strong>Related: </strong></span><a href="https://doi.org/10.1038/s41592-026-03028-7" target="_blank" rel="noopener">Prabakaran, R*., Bromberg, Y*. Quantifying uncertainty in protein representations across models and tasks. Nat Methods 23, 796&ndash;804 (2026)</a>
+            </p>
+            <img src="/assets/imgs/RNS_protein_universe_map.png" alt="Voronoi map of the UniProt protein universe coloured by mean Random Neighbor Score, showing regions of high and low protein language model uncertainty" width="100%" >
+        </div>
+    </div>
+    <div class="project" >
         <h3 class="">RNS with accelerated mode for protein residues and metagenomic reads <span class="wip-tag">Work in progress</span></h3>
         <div class="project-panel">
             <p>A faster version of the Random Neighbor Score (RNS) that estimates representation uncertainty for individual protein residues and for large sets of metagenomic reads.</p>
@@ -60,11 +77,11 @@
             </div>
         </div>
         <div class="project" >
-            <h3 class="">NF-EnzymeFinder: end-to-end Nextflow pipeline for novel enzyme mining <span class="wip-tag">Unpublished</span></h3>
+            <h3 class="">NF-REFinder: end-to-end Nextflow pipeline for novel enzyme mining <span class="wip-tag">In review</span></h3>
             <div class="project-panel">
                 <p>An end-to-end Nextflow pipeline that identifies enzymatic reads, assembles them into proteins, and delivers novel enzymes with predicted structures.</p>
                 <br>
-                <span><strong>Source (private): </strong></span><a href="https://github.com/rpkarandev/mag-rebean" target="_blank" rel="noopener">https://github.com/rpkarandev/mag-rebean</a>
+                <span><strong>Source: </strong></span><a href="https://bitbucket.org/bromberglab/nf-refinder/" target="_blank" rel="noopener">https://bitbucket.org/bromberglab/nf-refinder/</a>
             </div>
         </div>
         <div class="project" >
