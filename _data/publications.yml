@@ -272,10 +272,12 @@
   doi: 10.64898/2026.06.09.731090
 - Authors: 'Prabakaran, R*; Bromberg, Yana*; '
   Title: 'REFinder: Mining new enzymes from metagenomes'
-  Publication: bioRxiv (in screening)
+  Publication: bioRxiv
   Volume: ''
   Number: ''
   Pages: ''
   Year: '2026'
   Publisher: Cold Spring Harbor Laboratory
   category: Biological Language Models, Uncertainty & Metagenomics
+  doi: 10.64898/2026.10.01.756075
+  selected: true
